@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🧭 Travel Planner</div>
+    <div id="authArea" class="auth-area"></div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Plan your trip</h1>
+      <p class="subtitle">Tell us a bit about yourself and we'll tailor a plan — no account needed.</p>
+
+      <form id="planForm" class="grid">
+        <label>
+          Age
+          <input type="number" name="age" min="1" max="120" required />
+        </label>
+
+        <label>
+          Gender (optional)
+          <select name="gender">
+            <option value="unspecified">Prefer not to say</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Trip length (days)
+          <input type="number" name="length" min="1" max="60" required />
+        </label>
+
+        <label>
+          Total budget (USD)
+          <input type="number" name="budgetUSD" min="10" max="1000000" required />
+        </label>
+
+        <fieldset class="interests">
+          <legend>Interests (pick at least one)</legend>
+          <div class="interest-grid" id="interestGrid"></div>
+        </fieldset>
+
+        <button type="submit" class="primary">Get my plan</button>
+      </form>
+      <p id="formError" class="error"></p>
+    </section>
+
+    <section id="results" class="results"></section>
+
+    <section id="savedSection" class="card hidden">
+      <h2>Your saved plans</h2>
+      <div id="savedPlans"></div>
+    </section>
+  </main>
+
+  <dialog id="authDialog">
+    <form id="authForm" class="auth-form">
+      <h2 id="authTitle">Log in</h2>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" minlength="8" required />
+      </label>
+      <label id="displayNameField" class="hidden">
+        Display name (optional)
+        <input type="text" name="displayName" maxlength="40" placeholder="Shown to other travelers instead of your email" />
+      </label>
+      <p id="authError" class="error"></p>
+      <div class="auth-actions">
+        <button type="button" id="authToggle" class="link">Need an account? Sign up</button>
+        <div>
+          <button type="button" id="authCancel">Cancel</button>
+          <button type="submit" class="primary">Go</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
