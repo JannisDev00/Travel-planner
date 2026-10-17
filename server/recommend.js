@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { estimateFlight } = require("./flights");
 
 const destinations = JSON.parse(
   fs.readFileSync(path.join(__dirname, "..", "data", "destinations.json"), "utf8")
@@ -110,6 +111,7 @@ function generatePlans(input) {
     estimatedDailyCostUSD: dest.avgDailyCostUSD,
     estimatedTotalCostUSD: dest.avgDailyCostUSD * input.length,
     itinerary: buildItinerary(dest, input),
+    flight: estimateFlight(input.originCity, dest),
   }));
 }
 

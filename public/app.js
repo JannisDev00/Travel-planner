@@ -20,7 +20,7 @@ function renderInterestChips() {
   const grid = document.getElementById("interestGrid");
   grid.innerHTML = "";
   INTERESTS.forEach((interest) => {
-    const chip = el("div", { class: "interest-chip", text: interest });
+    const chip = el("div", { class: "interest-chip", text: interest, "data-interest": interest });
     chip.addEventListener("click", () => {
       if (state.selectedInterests.has(interest)) {
         state.selectedInterests.delete(interest);
@@ -31,6 +31,15 @@ function renderInterestChips() {
       }
     });
     grid.appendChild(chip);
+  });
+}
+
+async function loadCities() {
+  const select = document.getElementById("originCitySelect");
+  const cities = await api("/api/cities");
+  cities.forEach((city) => {
+    const option = el("option", { value: city.name, text: `${city.name}, ${city.country}` });
+    select.appendChild(option);
   });
 }
 
@@ -50,7 +59,7 @@ function renderAuthArea() {
   area.innerHTML = "";
   if (state.user) {
     area.appendChild(el("span", { text: state.user.email }));
-    const logoutBtn = el("button", { text: "Log out" });
+    const logoutBtn = el("button", { text: "🧳 Log out" });
     logoutBtn.addEventListener("click", async () => {
       await api("/api/auth/logout", { method: "POST" });
       state.user = null;
@@ -59,7 +68,7 @@ function renderAuthArea() {
     });
     area.appendChild(logoutBtn);
   } else {
-    const loginBtn = el("button", { text: "Log in / Sign up" });
+    const loginBtn = el("button", { class: "primary", text: "🛂 Log in / Sign up" });
     loginBtn.addEventListener("click", () => openAuthDialog("login"));
     area.appendChild(loginBtn);
   }
@@ -123,22 +132,40 @@ function renderPlans(plans, { showSaveButton }) {
   results.innerHTML = "";
 
   plans.forEach((plan) => {
-    const reasons = el("div", { class: "reasons", text: plan.reasons.join(" · ") });
+    const reasons = el("div", { class: "reasons" });
+    plan.reasons.forEach((reason) => {
+      reasons.appendChild(el("span", { class: "reason-tag", text: reason }));
+    });
+
+    const itineraryLabel = el("div", { class: "itinerary-label", text: "Itinerary" });
     const itineraryList = el("ol");
     plan.itinerary.forEach((day) => {
       itineraryList.appendChild(el("li", { text: `Day ${day.day}: ${day.plan}` }));
     });
 
-    const card = el("div", { class: "plan-card" }, [
+    const cardChildren = [
       el("h3", { text: `${plan.destination}, ${plan.country}` }),
       el("div", { class: "meta", text: `${plan.description}` }),
-      el("div", { class: "meta", text: `Estimated cost: ~$${plan.estimatedTotalCostUSD} total (~$${plan.estimatedDailyCostUSD}/day)` }),
-      reasons,
-      itineraryList,
-    ]);
+      el("div", { class: "cost-badge", text: `~$${plan.estimatedTotalCostUSD} total · ~$${plan.estimatedDailyCostUSD}/day` }),
+    ];
+
+    if (plan.flight) {
+      const f = plan.flight;
+      const stopsText = f.stops === 0 ? "Direct" : `${f.stops} stop`;
+      cardChildren.push(
+        el("div", {
+          class: "flight-info",
+          text: `${f.originCity} (${f.originIata}) → ${f.destinationIata}: ~$${f.roundTripPriceUSD} round trip · ${stopsText} · ~${f.totalDurationHours}h`,
+        })
+      );
+    }
+
+    cardChildren.push(reasons, itineraryLabel, itineraryList);
+
+    const card = el("div", { class: "plan-card" }, cardChildren);
 
     if (showSaveButton) {
-      const saveBtn = el("button", { class: "primary", text: "Save this plan" });
+      const saveBtn = el("button", { class: "primary", text: "📌 Save this plan" });
       const saveError = el("span", { class: "error inline-error" });
       saveBtn.addEventListener("click", async () => {
         saveError.textContent = "";
@@ -182,7 +209,7 @@ async function loadSavedPlans() {
     const label = `${entry.plan.destination} — ${entry.input.length} days, $${entry.input.budgetUSD} (saved ${new Date(entry.createdAt).toLocaleDateString()})`;
 
     const topRow = el("div", { class: "saved-plan-row" }, [el("span", { text: label })]);
-    const delBtn = el("button", { text: "Delete" });
+    const delBtn = el("button", { text: "🗑️ Delete" });
     delBtn.addEventListener("click", async () => {
       await api(`/api/plans/${entry.id}`, { method: "DELETE" });
       loadSavedPlans();
@@ -199,7 +226,7 @@ async function loadSavedPlans() {
     const visibilityError = el("span", { class: "error inline-error" });
 
     const communityPanel = el("div", { class: "community-panel hidden" });
-    const communityBtn = el("button", { text: "See who else is interested" });
+    const communityBtn = el("button", { text: "🤝 See who else is interested" });
 
     async function loadCommunity() {
       communityPanel.classList.remove("hidden");
@@ -269,6 +296,8 @@ function setupPlanForm() {
 
     const formData = new FormData(form);
     const body = {
+      originCity: formData.get("originCity"),
+      travelMonth: Number(formData.get("travelMonth")),
       age: Number(formData.get("age")),
       gender: formData.get("gender"),
       length: Number(formData.get("length")),
@@ -288,6 +317,7 @@ function setupPlanForm() {
 
 async function init() {
   renderInterestChips();
+  await loadCities();
   setupAuthDialog();
   setupPlanForm();
 

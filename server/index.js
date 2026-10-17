@@ -6,6 +6,7 @@ const session = require("express-session");
 const db = require("./db");
 const authRouter = require("./auth");
 const { generatePlans, budgetTierFromDaily } = require("./recommend");
+const { cities } = require("./flights");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -29,11 +30,15 @@ const VALID_INTERESTS = [
   "nightlife", "adventure", "nature", "wildlife", "shopping",
 ];
 
+const VALID_MONTHS = Array.from({ length: 12 }, (_, i) => i + 1);
+
 function validatePlanInput(body) {
   const age = Number(body.age);
   const length = Number(body.length);
   const budgetUSD = Number(body.budgetUSD);
+  const travelMonth = Number(body.travelMonth);
   const gender = typeof body.gender === "string" ? body.gender.slice(0, 40) : "unspecified";
+  const originCity = typeof body.originCity === "string" ? body.originCity.trim() : "";
   const interests = Array.isArray(body.interests)
     ? body.interests.filter((i) => VALID_INTERESTS.includes(i))
     : [];
@@ -42,9 +47,19 @@ function validatePlanInput(body) {
   if (!Number.isFinite(length) || length < 1 || length > 60) return { error: "Trip length must be between 1 and 60 days." };
   if (!Number.isFinite(budgetUSD) || budgetUSD < 10 || budgetUSD > 1000000) return { error: "Budget must be a reasonable positive amount." };
   if (!interests.length) return { error: "Pick at least one interest." };
+  if (!originCity || !cities.some((c) => c.name === originCity)) return { error: "Pick a valid starting city." };
+  if (!VALID_MONTHS.includes(travelMonth)) return { error: "Pick a travel month." };
 
-  return { value: { age, length, budgetUSD, gender, interests } };
+  return { value: { age, length, budgetUSD, gender, interests, originCity, travelMonth } };
 }
+
+app.get("/api/cities", (req, res) => {
+  res.json(
+    cities
+      .map((c) => ({ name: c.name, country: c.country }))
+      .sort((a, b) => a.name.localeCompare(b.name))
+  );
+});
 
 app.post("/api/plan", (req, res) => {
   const { error, value } = validatePlanInput(req.body || {});
