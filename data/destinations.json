@@ -1,23 +1,6546 @@
 [
-  { "name": "Bangkok", "country": "Thailand", "tags": ["food", "nightlife", "culture", "shopping"], "avgDailyCostUSD": 45, "idealLengthMin": 4, "idealLengthMax": 10, "ageSuitability": ["young", "adult"], "description": "A buzzing mix of street food, temples, markets and nightlife.", "iata": "BKK", "lat": 13.6900, "lon": 100.7501 },
-  { "name": "Bali", "country": "Indonesia", "tags": ["beach", "relaxation", "nature", "culture", "adventure"], "avgDailyCostUSD": 50, "idealLengthMin": 5, "idealLengthMax": 14, "ageSuitability": ["young", "adult", "senior"], "description": "Beaches, rice terraces, temples and a strong wellness/retreat scene.", "iata": "DPS", "lat": -8.7482, "lon": 115.1675 },
-  { "name": "Lisbon", "country": "Portugal", "tags": ["culture", "food", "history", "nightlife", "beach"], "avgDailyCostUSD": 90, "idealLengthMin": 3, "idealLengthMax": 10, "ageSuitability": ["young", "adult", "senior"], "description": "Hilly, colourful streets, great food scene, nearby beaches.", "iata": "LIS", "lat": 38.7813, "lon": -9.1359 },
-  { "name": "Reykjavik & South Coast", "country": "Iceland", "tags": ["nature", "adventure", "wildlife"], "avgDailyCostUSD": 180, "idealLengthMin": 4, "idealLengthMax": 10, "ageSuitability": ["young", "adult", "senior"], "description": "Waterfalls, glaciers, hot springs and dramatic landscapes.", "iata": "KEF", "lat": 63.9850, "lon": -22.6056 },
-  { "name": "Kyoto", "country": "Japan", "tags": ["culture", "history", "food", "nature"], "avgDailyCostUSD": 120, "idealLengthMin": 3, "idealLengthMax": 8, "ageSuitability": ["young", "adult", "senior"], "description": "Temples, gardens, traditional streets and seasonal scenery.", "iata": "KIX", "lat": 34.4347, "lon": 135.2440 },
-  { "name": "Tokyo", "country": "Japan", "tags": ["food", "shopping", "nightlife", "culture"], "avgDailyCostUSD": 140, "idealLengthMin": 4, "idealLengthMax": 10, "ageSuitability": ["young", "adult"], "description": "Dense, electric city with endless food, shopping and nightlife.", "iata": "HND", "lat": 35.5494, "lon": 139.7798 },
-  { "name": "Cape Town", "country": "South Africa", "tags": ["nature", "adventure", "wildlife", "food", "beach"], "avgDailyCostUSD": 85, "idealLengthMin": 5, "idealLengthMax": 12, "ageSuitability": ["young", "adult", "senior"], "description": "Mountains, coastline, wine country and nearby safari access.", "iata": "CPT", "lat": -33.9715, "lon": 18.6021 },
-  { "name": "Barcelona", "country": "Spain", "tags": ["culture", "nightlife", "food", "beach", "history"], "avgDailyCostUSD": 110, "idealLengthMin": 3, "idealLengthMax": 8, "ageSuitability": ["young", "adult"], "description": "Architecture, beach access and one of Europe's best nightlife scenes.", "iata": "BCN", "lat": 41.2974, "lon": 2.0833 },
-  { "name": "Swiss Alps (Interlaken)", "country": "Switzerland", "tags": ["adventure", "nature", "relaxation"], "avgDailyCostUSD": 200, "idealLengthMin": 3, "idealLengthMax": 7, "ageSuitability": ["young", "adult", "senior"], "description": "Hiking, paragliding, lakes and mountain scenery.", "iata": "ZRH", "lat": 47.4647, "lon": 8.5492 },
-  { "name": "Marrakech", "country": "Morocco", "tags": ["culture", "shopping", "food", "history", "adventure"], "avgDailyCostUSD": 55, "idealLengthMin": 3, "idealLengthMax": 8, "ageSuitability": ["young", "adult", "senior"], "description": "Markets, desert day-trips, riads and rich history.", "iata": "RAK", "lat": 31.6069, "lon": -8.0363 },
-  { "name": "Costa Rica (Pacific Coast)", "country": "Costa Rica", "tags": ["nature", "wildlife", "adventure", "beach", "relaxation"], "avgDailyCostUSD": 95, "idealLengthMin": 7, "idealLengthMax": 14, "ageSuitability": ["young", "adult", "senior"], "description": "Rainforest, wildlife, surfing and eco-lodges.", "iata": "SJO", "lat": 9.9939, "lon": -84.2088 },
-  { "name": "New York City", "country": "USA", "tags": ["culture", "nightlife", "shopping", "food", "history"], "avgDailyCostUSD": 220, "idealLengthMin": 3, "idealLengthMax": 8, "ageSuitability": ["young", "adult", "senior"], "description": "World-class museums, food, shows and nonstop energy.", "iata": "JFK", "lat": 40.6413, "lon": -73.7781 },
-  { "name": "Maldives", "country": "Maldives", "tags": ["beach", "relaxation", "wildlife"], "avgDailyCostUSD": 350, "idealLengthMin": 4, "idealLengthMax": 10, "ageSuitability": ["adult", "senior"], "description": "Overwater villas, snorkelling and total relaxation.", "iata": "MLE", "lat": 4.1917, "lon": 73.5293 },
-  { "name": "Ho Chi Minh City & Mekong Delta", "country": "Vietnam", "tags": ["food", "culture", "history", "nature"], "avgDailyCostUSD": 35, "idealLengthMin": 5, "idealLengthMax": 12, "ageSuitability": ["young", "adult"], "description": "Street food, war history, floating markets and river life.", "iata": "SGN", "lat": 10.8188, "lon": 106.6520 },
-  { "name": "Prague", "country": "Czech Republic", "tags": ["culture", "history", "nightlife", "food"], "avgDailyCostUSD": 65, "idealLengthMin": 3, "idealLengthMax": 7, "ageSuitability": ["young", "adult", "senior"], "description": "Fairy-tale old town, affordable beer culture and deep history.", "iata": "PRG", "lat": 50.1008, "lon": 14.2600 },
-  { "name": "Queenstown", "country": "New Zealand", "tags": ["adventure", "nature", "wildlife"], "avgDailyCostUSD": 150, "idealLengthMin": 5, "idealLengthMax": 10, "ageSuitability": ["young", "adult"], "description": "Bungee jumping, hiking, lakes and dramatic alpine scenery.", "iata": "ZQN", "lat": -45.0211, "lon": 168.7392 },
-  { "name": "Rome", "country": "Italy", "tags": ["history", "culture", "food", "shopping"], "avgDailyCostUSD": 100, "idealLengthMin": 3, "idealLengthMax": 7, "ageSuitability": ["young", "adult", "senior"], "description": "Ancient ruins, world-class food and timeless art.", "iata": "FCO", "lat": 41.8003, "lon": 12.2389 },
-  { "name": "Seychelles", "country": "Seychelles", "tags": ["beach", "relaxation", "nature", "wildlife"], "avgDailyCostUSD": 280, "idealLengthMin": 5, "idealLengthMax": 10, "ageSuitability": ["adult", "senior"], "description": "Quiet beaches, granite islands and secluded resorts.", "iata": "SEZ", "lat": -4.6743, "lon": 55.5218 },
-  { "name": "Budapest", "country": "Hungary", "tags": ["nightlife", "culture", "relaxation", "history"], "avgDailyCostUSD": 55, "idealLengthMin": 3, "idealLengthMax": 6, "ageSuitability": ["young", "adult"], "description": "Thermal baths, ruin bars and grand Habsburg-era architecture.", "iata": "BUD", "lat": 47.4298, "lon": 19.2611 },
-  { "name": "Kenya (Masai Mara)", "country": "Kenya", "tags": ["wildlife", "adventure", "nature"], "avgDailyCostUSD": 250, "idealLengthMin": 5, "idealLengthMax": 10, "ageSuitability": ["adult", "senior"], "description": "Classic safari country with major wildlife migrations.", "iata": "NBO", "lat": -1.3192, "lon": 36.9278 },
-  { "name": "Lake Como", "country": "Italy", "tags": ["relaxation", "nature", "culture"], "avgDailyCostUSD": 160, "idealLengthMin": 3, "idealLengthMax": 6, "ageSuitability": ["adult", "senior"], "description": "Calm lakeside towns, villas and gentle scenery.", "iata": "MXP", "lat": 45.6306, "lon": 8.7281 }
+  {
+    "name": "Antigua",
+    "country": "Antigua and Barbuda",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "365 beaches, one for every day of the year.",
+    "iata": "ANU",
+    "lat": 17.1367,
+    "lon": -61.7927
+  },
+  {
+    "name": "Bariloche",
+    "country": "Argentina",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Swiss-style lake town in the Argentine Andes.",
+    "iata": "BRC",
+    "lat": -41.1512,
+    "lon": -71.1575
+  },
+  {
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "tags": [
+      "culture",
+      "nightlife",
+      "food",
+      "history"
+    ],
+    "avgDailyCostUSD": 85,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Tango, steakhouses and grand European-style architecture.",
+    "iata": "EZE",
+    "lat": -34.8222,
+    "lon": -58.5358
+  },
+  {
+    "name": "Iguazu Falls",
+    "country": "Argentina",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A thundering system of waterfalls straddling two countries.",
+    "iata": "IGR",
+    "lat": -25.7373,
+    "lon": -54.4734
+  },
+  {
+    "name": "Patagonia (El Calafate)",
+    "country": "Argentina",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Glaciers, granite peaks and some of the world's best trekking.",
+    "iata": "FTE",
+    "lat": -50.2803,
+    "lon": -72.0534
+  },
+  {
+    "name": "Yerevan",
+    "country": "Armenia",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "One of the world's oldest cities, framed by Mount Ararat.",
+    "iata": "EVN",
+    "lat": 40.1489,
+    "lon": 44.3979
+  },
+  {
+    "name": "Aruba",
+    "country": "Aruba",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Reliable sun, calm water and a desert-like interior.",
+    "iata": "AUA",
+    "lat": 12.5011,
+    "lon": -70.0143
+  },
+  {
+    "name": "Adelaide",
+    "country": "Australia",
+    "tags": [
+      "food",
+      "culture",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A relaxed city surrounded by some of Australia's best wine regions.",
+    "iata": "ADL",
+    "lat": -34.9475,
+    "lon": 138.5334
+  },
+  {
+    "name": "Darwin",
+    "country": "Australia",
+    "tags": [
+      "nature",
+      "wildlife",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Tropical gateway to Kakadu's wetlands and wildlife.",
+    "iata": "DRW",
+    "lat": -12.415,
+    "lon": 130.8818
+  },
+  {
+    "name": "Gold Coast",
+    "country": "Australia",
+    "tags": [
+      "beach",
+      "nightlife",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Surf beaches and theme parks along a high-rise coastline.",
+    "iata": "OOL",
+    "lat": -28.166,
+    "lon": 153.5066
+  },
+  {
+    "name": "Great Barrier Reef (Cairns)",
+    "country": "Australia",
+    "tags": [
+      "adventure",
+      "wildlife",
+      "nature",
+      "beach"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Gateway to the world's largest coral reef system.",
+    "iata": "CNS",
+    "lat": -16.8789,
+    "lon": 145.7495
+  },
+  {
+    "name": "Melbourne",
+    "country": "Australia",
+    "tags": [
+      "food",
+      "culture",
+      "nightlife",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Laneway cafés, street art and a huge live-events calendar.",
+    "iata": "MEL",
+    "lat": -37.6707,
+    "lon": 144.8379
+  },
+  {
+    "name": "Perth",
+    "country": "Australia",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "One of the world's most isolated cities, with pristine beaches.",
+    "iata": "PER",
+    "lat": -31.9403,
+    "lon": 115.967
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "tags": [
+      "culture",
+      "beach",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Harbor views, iconic architecture and city beaches.",
+    "iata": "SYD",
+    "lat": -33.9461,
+    "lon": 151.177
+  },
+  {
+    "name": "Tasmania",
+    "country": "Australia",
+    "tags": [
+      "nature",
+      "adventure",
+      "food"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Wild coastlines, hiking trails and a growing food-and-wine scene.",
+    "iata": "HBA",
+    "lat": -42.837,
+    "lon": 147.513
+  },
+  {
+    "name": "Uluru & Alice Springs",
+    "country": "Australia",
+    "tags": [
+      "nature",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The sacred red-rock monolith at the heart of the outback.",
+    "iata": "AYQ",
+    "lat": -25.1859,
+    "lon": 130.977
+  },
+  {
+    "name": "Hallstatt",
+    "country": "Austria",
+    "tags": [
+      "nature",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A postcard lakeside village tucked beneath the mountains.",
+    "iata": "SZG",
+    "lat": 47.7933,
+    "lon": 13.0043
+  },
+  {
+    "name": "Innsbruck",
+    "country": "Austria",
+    "tags": [
+      "adventure",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "An alpine capital for skiing, hiking and Tyrolean charm.",
+    "iata": "INN",
+    "lat": 47.2602,
+    "lon": 11.344
+  },
+  {
+    "name": "Salzburg",
+    "country": "Austria",
+    "tags": [
+      "culture",
+      "history",
+      "nature"
+    ],
+    "avgDailyCostUSD": 135,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Baroque old town set against the Alps, famous for music history.",
+    "iata": "SZG",
+    "lat": 47.7933,
+    "lon": 13.0043
+  },
+  {
+    "name": "Vienna",
+    "country": "Austria",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Imperial palaces, classical music and elegant coffeehouses.",
+    "iata": "VIE",
+    "lat": 48.1103,
+    "lon": 16.5697
+  },
+  {
+    "name": "Baku",
+    "country": "Azerbaijan",
+    "tags": [
+      "culture",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Futuristic architecture beside a walled medieval old city.",
+    "iata": "GYD",
+    "lat": 40.4728,
+    "lon": 50.0509
+  },
+  {
+    "name": "Nassau & the Bahamas",
+    "country": "Bahamas",
+    "tags": [
+      "beach",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Postcard-blue water across hundreds of islands.",
+    "iata": "NAS",
+    "lat": 25.039,
+    "lon": -77.4662
+  },
+  {
+    "name": "Barbados",
+    "country": "Barbados",
+    "tags": [
+      "beach",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Calm Caribbean-side beaches and a lively Atlantic surf coast.",
+    "iata": "BGI",
+    "lat": 13.0747,
+    "lon": -59.491
+  },
+  {
+    "name": "Antwerp",
+    "country": "Belgium",
+    "tags": [
+      "shopping",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Diamond-trade history and a thriving fashion scene.",
+    "iata": "ANR",
+    "lat": 51.1907,
+    "lon": 4.4632
+  },
+  {
+    "name": "Bruges",
+    "country": "Belgium",
+    "tags": [
+      "culture",
+      "history",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Fairy-tale canals and medieval architecture in a compact old town.",
+    "iata": "BRU",
+    "lat": 50.9014,
+    "lon": 4.4844
+  },
+  {
+    "name": "Brussels",
+    "country": "Belgium",
+    "tags": [
+      "food",
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Grand squares, chocolate, waffles and easy day trips to Bruges.",
+    "iata": "BRU",
+    "lat": 50.9014,
+    "lon": 4.4844
+  },
+  {
+    "name": "Belize",
+    "country": "Belize",
+    "tags": [
+      "beach",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "The Great Blue Hole and a laid-back barrier-reef coastline.",
+    "iata": "BZE",
+    "lat": 17.54,
+    "lon": -88.3036
+  },
+  {
+    "name": "Bhutan",
+    "country": "Bhutan",
+    "tags": [
+      "culture",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 250,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Cliffside monasteries in the last Himalayan Buddhist kingdom.",
+    "iata": "PBH",
+    "lat": 27.4032,
+    "lon": 89.4246
+  },
+  {
+    "name": "La Paz",
+    "country": "Bolivia",
+    "tags": [
+      "culture",
+      "adventure",
+      "history"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "The world's highest capital, ringed by snow-capped peaks.",
+    "iata": "LPB",
+    "lat": -16.5103,
+    "lon": -68.1894
+  },
+  {
+    "name": "Uyuni Salt Flats",
+    "country": "Bolivia",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A blinding white salt desert that turns into a giant mirror in the rain.",
+    "iata": "UYU",
+    "lat": -20.4413,
+    "lon": -66.8576
+  },
+  {
+    "name": "Sarajevo",
+    "country": "Bosnia and Herzegovina",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A crossroads of cultures with a compelling, complex history.",
+    "iata": "SJJ",
+    "lat": 43.8246,
+    "lon": 18.3315
+  },
+  {
+    "name": "Okavango Delta",
+    "country": "Botswana",
+    "tags": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 350,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A lush inland river delta teeming with wildlife.",
+    "iata": "MUB",
+    "lat": -19.9705,
+    "lon": 23.4314
+  },
+  {
+    "name": "Florianopolis",
+    "country": "Brazil",
+    "tags": [
+      "beach",
+      "nightlife",
+      "nature"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "An island of over forty beaches, popular with surfers.",
+    "iata": "FLN",
+    "lat": -27.6703,
+    "lon": -48.5525
+  },
+  {
+    "name": "Manaus & the Amazon",
+    "country": "Brazil",
+    "tags": [
+      "wildlife",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Jungle lodges deep in the world's largest rainforest.",
+    "iata": "MAO",
+    "lat": -3.0386,
+    "lon": -60.0497
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "tags": [
+      "beach",
+      "nightlife",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Famous beaches, samba nightlife and a mountaintop Christ statue.",
+    "iata": "GIG",
+    "lat": -22.81,
+    "lon": -43.2506
+  },
+  {
+    "name": "Salvador",
+    "country": "Brazil",
+    "tags": [
+      "culture",
+      "beach",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 4,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Afro-Brazilian culture, colorful colonial streets and beach clubs.",
+    "iata": "SSA",
+    "lat": -12.9086,
+    "lon": -38.3225
+  },
+  {
+    "name": "Sao Paulo",
+    "country": "Brazil",
+    "tags": [
+      "food",
+      "nightlife",
+      "culture",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A sprawling cultural and culinary capital.",
+    "iata": "GRU",
+    "lat": -23.4313,
+    "lon": -46.47
+  },
+  {
+    "name": "Tortola",
+    "country": "British Virgin Islands",
+    "tags": [
+      "beach",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "A sailing paradise of calm turquoise channels.",
+    "iata": "EIS",
+    "lat": 18.4455,
+    "lon": -64.5417
+  },
+  {
+    "name": "Sofia",
+    "country": "Bulgaria",
+    "tags": [
+      "history",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A low-cost capital with mountains visible from the city center.",
+    "iata": "SOF",
+    "lat": 42.6964,
+    "lon": 23.4177
+  },
+  {
+    "name": "Phnom Penh",
+    "country": "Cambodia",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A riverside capital with sobering but important history.",
+    "iata": "KTI",
+    "lat": 11.36,
+    "lon": 104.9213
+  },
+  {
+    "name": "Siem Reap & Angkor Wat",
+    "country": "Cambodia",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The vast temple complex of Angkor, best explored by bicycle.",
+    "iata": "SAI",
+    "lat": 13.3697,
+    "lon": 104.2238
+  },
+  {
+    "name": "Banff & the Canadian Rockies",
+    "country": "Canada",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Turquoise glacial lakes ringed by snowy peaks.",
+    "iata": "YYC",
+    "lat": 51.1188,
+    "lon": -114.0099
+  },
+  {
+    "name": "Montreal",
+    "country": "Canada",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "French-flavored old town with a buzzing festival calendar.",
+    "iata": "YUL",
+    "lat": 45.4678,
+    "lon": -73.7423
+  },
+  {
+    "name": "Niagara Falls",
+    "country": "Canada",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "One of the most powerful waterfalls in the world, viewed up close.",
+    "iata": "YYZ",
+    "lat": 43.6759,
+    "lon": -79.6294
+  },
+  {
+    "name": "Quebec City",
+    "country": "Canada",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "The most European-feeling old town in North America.",
+    "iata": "YQB",
+    "lat": 46.7911,
+    "lon": -71.3933
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "tags": [
+      "culture",
+      "food",
+      "shopping",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A diverse, food-obsessed city with a landmark CN Tower view.",
+    "iata": "YYZ",
+    "lat": 43.6759,
+    "lon": -79.6294
+  },
+  {
+    "name": "Vancouver",
+    "country": "Canada",
+    "tags": [
+      "nature",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Mountains and ocean meet in one of North America's most scenic cities.",
+    "iata": "YVR",
+    "lat": 49.1939,
+    "lon": -123.184
+  },
+  {
+    "name": "Whistler",
+    "country": "Canada",
+    "tags": [
+      "adventure",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A world-class ski resort town with summer hiking and biking.",
+    "iata": "YVR",
+    "lat": 49.1939,
+    "lon": -123.184
+  },
+  {
+    "name": "Cape Verde",
+    "country": "Cape Verde",
+    "tags": [
+      "beach",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Volcanic Atlantic islands with windsurfing and quiet beaches.",
+    "iata": "SID",
+    "lat": 16.7414,
+    "lon": -22.9494
+  },
+  {
+    "name": "Easter Island",
+    "country": "Chile",
+    "tags": [
+      "history",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "One of the most remote inhabited islands on Earth, home to the moai statues.",
+    "iata": "IPC",
+    "lat": -27.1654,
+    "lon": -109.421
+  },
+  {
+    "name": "Santiago",
+    "country": "Chile",
+    "tags": [
+      "culture",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A modern capital ringed by the Andes and nearby vineyards.",
+    "iata": "SCL",
+    "lat": -33.393,
+    "lon": -70.7858
+  },
+  {
+    "name": "Beijing",
+    "country": "China",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 4,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The Great Wall, the Forbidden City and centuries of imperial history.",
+    "iata": "PEK",
+    "lat": 40.0773,
+    "lon": 116.5967
+  },
+  {
+    "name": "Chengdu",
+    "country": "China",
+    "tags": [
+      "food",
+      "wildlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Spicy hotpot and a chance to see giant pandas up close.",
+    "iata": "CTU",
+    "lat": 30.5583,
+    "lon": 103.946
+  },
+  {
+    "name": "Guilin & Yangshuo",
+    "country": "China",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Karst mountain scenery along the Li River.",
+    "iata": "KWL",
+    "lat": 25.2198,
+    "lon": 110.0396
+  },
+  {
+    "name": "Lhasa",
+    "country": "China",
+    "tags": [
+      "culture",
+      "history",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "The Potala Palace and Tibetan Buddhist culture at high altitude.",
+    "iata": "LXA",
+    "lat": 29.298,
+    "lon": 90.912
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "tags": [
+      "shopping",
+      "food",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A futuristic skyline beside a historic riverside promenade.",
+    "iata": "PVG",
+    "lat": 31.1434,
+    "lon": 121.805
+  },
+  {
+    "name": "Xi'an",
+    "country": "China",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Home of the Terracotta Army and an ancient city wall.",
+    "iata": "XIY",
+    "lat": 34.4422,
+    "lon": 108.7624
+  },
+  {
+    "name": "Bogota",
+    "country": "Colombia",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A high-altitude capital with a thriving arts and food scene.",
+    "iata": "BOG",
+    "lat": 4.7016,
+    "lon": -74.1469
+  },
+  {
+    "name": "Cartagena",
+    "country": "Colombia",
+    "tags": [
+      "history",
+      "beach",
+      "nightlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A walled colonial city with colorful streets on the Caribbean coast.",
+    "iata": "CTG",
+    "lat": 10.4424,
+    "lon": -75.513
+  },
+  {
+    "name": "Medellin",
+    "country": "Colombia",
+    "tags": [
+      "culture",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "The city of eternal spring, transformed into a creative hub.",
+    "iata": "MDE",
+    "lat": 6.1645,
+    "lon": -75.4231
+  },
+  {
+    "name": "Rarotonga",
+    "country": "Cook Islands",
+    "tags": [
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A small, laid-back Pacific island ringed by a coral lagoon.",
+    "iata": "RAR",
+    "lat": -21.2027,
+    "lon": -159.806
+  },
+  {
+    "name": "Costa Rica (Pacific Coast)",
+    "country": "Costa Rica",
+    "tags": [
+      "nature",
+      "wildlife",
+      "adventure",
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 7,
+    "idealLengthMax": 14,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Rainforest, wildlife, surfing and eco-lodges.",
+    "iata": "SJO",
+    "lat": 9.9939,
+    "lon": -84.2088
+  },
+  {
+    "name": "Dubrovnik",
+    "country": "Croatia",
+    "tags": [
+      "history",
+      "beach",
+      "culture"
+    ],
+    "avgDailyCostUSD": 115,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Walled old town overlooking the sparkling Adriatic.",
+    "iata": "DBV",
+    "lat": 42.5622,
+    "lon": 18.2655
+  },
+  {
+    "name": "Split",
+    "country": "Croatia",
+    "tags": [
+      "beach",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A Roman palace turned lively old town, gateway to island-hopping.",
+    "iata": "SPU",
+    "lat": 43.5389,
+    "lon": 16.298
+  },
+  {
+    "name": "Havana",
+    "country": "Cuba",
+    "tags": [
+      "culture",
+      "history",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Vintage cars, live salsa and crumbling colonial grandeur.",
+    "iata": "HAV",
+    "lat": 22.9892,
+    "lon": -82.4091
+  },
+  {
+    "name": "Curacao",
+    "country": "Curacao",
+    "tags": [
+      "beach",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Dutch colonial color and excellent shore diving.",
+    "iata": "CUR",
+    "lat": 12.1889,
+    "lon": -68.9598
+  },
+  {
+    "name": "Cyprus",
+    "country": "Cyprus",
+    "tags": [
+      "beach",
+      "history",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Sunny Mediterranean beaches with ancient ruins inland.",
+    "iata": "LCA",
+    "lat": 34.8751,
+    "lon": 33.6249
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "tags": [
+      "culture",
+      "history",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Fairy-tale old town, affordable beer culture and deep history.",
+    "iata": "PRG",
+    "lat": 50.1008,
+    "lon": 14.26
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Design, cycling culture and one of the world's best food scenes.",
+    "iata": "CPH",
+    "lat": 55.6179,
+    "lon": 12.656
+  },
+  {
+    "name": "Faroe Islands",
+    "country": "Denmark",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Dramatic sea cliffs and grass-roofed villages in the North Atlantic.",
+    "iata": "FAE",
+    "lat": 62.0633,
+    "lon": -7.2758
+  },
+  {
+    "name": "Punta Cana",
+    "country": "Dominican Republic",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Long white beaches lined with all-inclusive resorts.",
+    "iata": "PUJ",
+    "lat": 18.5671,
+    "lon": -68.3646
+  },
+  {
+    "name": "Quito & Galapagos",
+    "country": "Ecuador",
+    "tags": [
+      "wildlife",
+      "nature",
+      "adventure",
+      "history"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 6,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A colonial capital that's also the gateway to the Galapagos Islands.",
+    "iata": "UIO",
+    "lat": -0.1254,
+    "lon": -78.3543
+  },
+  {
+    "name": "Cairo & Giza",
+    "country": "Egypt",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The last standing wonder of the ancient world, right at the city's edge.",
+    "iata": "CAI",
+    "lat": 30.1115,
+    "lon": 31.3967
+  },
+  {
+    "name": "Luxor & Aswan",
+    "country": "Egypt",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Temple complexes and a scenic Nile cruise between the two cities.",
+    "iata": "LXR",
+    "lat": 25.671,
+    "lon": 32.7064
+  },
+  {
+    "name": "Red Sea Coast (Hurghada)",
+    "country": "Egypt",
+    "tags": [
+      "beach",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "World-class diving and all-inclusive beach resorts.",
+    "iata": "HRG",
+    "lat": 27.1768,
+    "lon": 33.7967
+  },
+  {
+    "name": "Sharm El Sheikh",
+    "country": "Egypt",
+    "tags": [
+      "beach",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Red Sea reefs and resort beaches on the Sinai Peninsula.",
+    "iata": "SSH",
+    "lat": 27.9773,
+    "lon": 34.3947
+  },
+  {
+    "name": "Tallinn",
+    "country": "Estonia",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A compact medieval old town with a youthful, modern edge.",
+    "iata": "TLL",
+    "lat": 59.4132,
+    "lon": 24.8326
+  },
+  {
+    "name": "Addis Ababa & Lalibela",
+    "country": "Ethiopia",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Rock-hewn churches and some of the world's oldest Christian history.",
+    "iata": "ADD",
+    "lat": 8.9779,
+    "lon": 38.7993
+  },
+  {
+    "name": "Fiji",
+    "country": "Fiji",
+    "tags": [
+      "beach",
+      "relaxation",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Warm, friendly islands with some of the Pacific's best diving.",
+    "iata": "NAN",
+    "lat": -17.7618,
+    "lon": 177.4378
+  },
+  {
+    "name": "Finnish Lapland",
+    "country": "Finland",
+    "tags": [
+      "adventure",
+      "nature",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Snowy wilderness famous for the northern lights and husky sledding.",
+    "iata": "RVN",
+    "lat": 66.5633,
+    "lon": 25.8298
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "tags": [
+      "culture",
+      "nature",
+      "food"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Scandinavian design, saunas and nearby island escapes.",
+    "iata": "HEL",
+    "lat": 60.3184,
+    "lon": 24.9633
+  },
+  {
+    "name": "Bordeaux",
+    "country": "France",
+    "tags": [
+      "food",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "World-famous vineyards around an elegant riverside city.",
+    "iata": "BOD",
+    "lat": 44.8287,
+    "lon": -0.7154
+  },
+  {
+    "name": "Loire Valley",
+    "country": "France",
+    "tags": [
+      "history",
+      "food",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Renaissance chateaux scattered through wine country.",
+    "iata": "TUF",
+    "lat": 47.4322,
+    "lon": 0.7276
+  },
+  {
+    "name": "Lyon",
+    "country": "France",
+    "tags": [
+      "food",
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Widely regarded as France's food capital.",
+    "iata": "LYN",
+    "lat": 45.7279,
+    "lon": 4.944
+  },
+  {
+    "name": "Nice & French Riviera",
+    "country": "France",
+    "tags": [
+      "beach",
+      "relaxation",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Glamorous coastline, pastel old towns and Mediterranean beaches.",
+    "iata": "NCE",
+    "lat": 43.6584,
+    "lon": 7.2159
+  },
+  {
+    "name": "Normandy",
+    "country": "France",
+    "tags": [
+      "history",
+      "nature"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "D-Day beaches and the tidal island abbey of Mont Saint-Michel.",
+    "iata": "CFR",
+    "lat": 49.1768,
+    "lon": -0.4549
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "shopping",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Iconic landmarks, world-class museums and café culture.",
+    "iata": "CDG",
+    "lat": 49.009,
+    "lon": 2.5541
+  },
+  {
+    "name": "Provence",
+    "country": "France",
+    "tags": [
+      "relaxation",
+      "food",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Lavender fields, hilltop villages and market towns.",
+    "iata": "MRS",
+    "lat": 43.4381,
+    "lon": 5.2125
+  },
+  {
+    "name": "Strasbourg",
+    "country": "France",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 125,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Half-timbered canals with a Franco-German character.",
+    "iata": "SXB",
+    "lat": 48.5383,
+    "lon": 7.6282
+  },
+  {
+    "name": "Bora Bora & Tahiti",
+    "country": "French Polynesia",
+    "tags": [
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 400,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Overwater bungalows over an impossibly blue lagoon.",
+    "iata": "PPT",
+    "lat": -17.5535,
+    "lon": -149.6069
+  },
+  {
+    "name": "Tbilisi",
+    "country": "Georgia",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Sulfur bathhouses, old-town balconies and an emerging wine scene.",
+    "iata": "TBS",
+    "lat": 41.6692,
+    "lon": 44.9547
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany",
+    "tags": [
+      "history",
+      "nightlife",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Cold War history, world-famous clubs and a huge creative scene.",
+    "iata": "BER",
+    "lat": 52.3617,
+    "lon": 13.5023
+  },
+  {
+    "name": "Cologne",
+    "country": "Germany",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 115,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A towering Gothic cathedral and a relaxed riverside old town.",
+    "iata": "CGN",
+    "lat": 50.8659,
+    "lon": 7.1427
+  },
+  {
+    "name": "Frankfurt",
+    "country": "Germany",
+    "tags": [
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 135,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "A compact skyline city with museums along the river.",
+    "iata": "FRA",
+    "lat": 50.0267,
+    "lon": 8.5584
+  },
+  {
+    "name": "Hamburg",
+    "country": "Germany",
+    "tags": [
+      "culture",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 125,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Harbor city with warehouses, music venues and a lively port.",
+    "iata": "HAM",
+    "lat": 53.6304,
+    "lon": 9.9882
+  },
+  {
+    "name": "Munich",
+    "country": "Germany",
+    "tags": [
+      "culture",
+      "food",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Beer halls, Bavarian charm and nearby alpine day trips.",
+    "iata": "MUC",
+    "lat": 48.3538,
+    "lon": 11.7861
+  },
+  {
+    "name": "Accra",
+    "country": "Ghana",
+    "tags": [
+      "culture",
+      "history",
+      "beach"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A warm, welcoming capital with poignant coastal fort history.",
+    "iata": "ACC",
+    "lat": 5.6052,
+    "lon": -0.1668
+  },
+  {
+    "name": "Athens",
+    "country": "Greece",
+    "tags": [
+      "history",
+      "culture",
+      "food",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The Acropolis, ancient ruins and a buzzing modern food scene.",
+    "iata": "ATH",
+    "lat": 37.9364,
+    "lon": 23.9445
+  },
+  {
+    "name": "Crete",
+    "country": "Greece",
+    "tags": [
+      "beach",
+      "history",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Greece's largest island, with gorges, ruins and quiet coves.",
+    "iata": "HER",
+    "lat": 35.3397,
+    "lon": 25.1803
+  },
+  {
+    "name": "Mykonos",
+    "country": "Greece",
+    "tags": [
+      "nightlife",
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Whitewashed streets by day, famous beach clubs by night.",
+    "iata": "JMK",
+    "lat": 37.4351,
+    "lon": 25.3481
+  },
+  {
+    "name": "Santorini",
+    "country": "Greece",
+    "tags": [
+      "beach",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Whitewashed cliffside villages over a dramatic caldera.",
+    "iata": "JTR",
+    "lat": 36.4,
+    "lon": 25.4786
+  },
+  {
+    "name": "Grenada",
+    "country": "Grenada",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "The Spice Isle, with rainforest waterfalls and quiet beaches.",
+    "iata": "GND",
+    "lat": 12.004,
+    "lon": -61.7853
+  },
+  {
+    "name": "Antigua",
+    "country": "Guatemala",
+    "tags": [
+      "history",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Cobblestone colonial streets ringed by volcanoes.",
+    "iata": "ANU",
+    "lat": 17.1367,
+    "lon": -61.7927
+  },
+  {
+    "name": "Roatan",
+    "country": "Honduras",
+    "tags": [
+      "beach",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Caribbean reef diving on a laid-back island.",
+    "iata": "RTB",
+    "lat": 16.3168,
+    "lon": -86.523
+  },
+  {
+    "name": "Hong Kong",
+    "country": "Hong Kong",
+    "tags": [
+      "food",
+      "shopping",
+      "nightlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A dense, dazzling skyline with dim sum and harbor views.",
+    "iata": "HKG",
+    "lat": 22.3118,
+    "lon": 113.9149
+  },
+  {
+    "name": "Budapest",
+    "country": "Hungary",
+    "tags": [
+      "nightlife",
+      "culture",
+      "relaxation",
+      "history"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Thermal baths, ruin bars and grand Habsburg-era architecture.",
+    "iata": "BUD",
+    "lat": 47.4298,
+    "lon": 19.2611
+  },
+  {
+    "name": "Reykjavik & South Coast",
+    "country": "Iceland",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 4,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Waterfalls, glaciers, hot springs and dramatic landscapes.",
+    "iata": "KEF",
+    "lat": 63.985,
+    "lon": -22.6056
+  },
+  {
+    "name": "Amritsar",
+    "country": "India",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Home to the Golden Temple and its moving nightly ceremony.",
+    "iata": "ATQ",
+    "lat": 31.7096,
+    "lon": 74.7973
+  },
+  {
+    "name": "Andaman Islands",
+    "country": "India",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Remote, clear-water islands far off India's east coast.",
+    "iata": "IXZ",
+    "lat": 11.6402,
+    "lon": 92.729
+  },
+  {
+    "name": "Delhi & Agra",
+    "country": "India",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Mughal forts, bazaars and the Taj Mahal at sunrise.",
+    "iata": "DEL",
+    "lat": 28.5556,
+    "lon": 77.0952
+  },
+  {
+    "name": "Goa",
+    "country": "India",
+    "tags": [
+      "beach",
+      "nightlife",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Portuguese-influenced beaches with a famous party scene.",
+    "iata": "GOX",
+    "lat": 15.7443,
+    "lon": 73.8606
+  },
+  {
+    "name": "Hampi",
+    "country": "India",
+    "tags": [
+      "history",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 30,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Boulder-strewn ruins of a once-great medieval empire.",
+    "iata": "HBX",
+    "lat": 15.3611,
+    "lon": 75.0821
+  },
+  {
+    "name": "Jaipur",
+    "country": "India",
+    "tags": [
+      "history",
+      "culture",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The Pink City, famous for palaces and vibrant bazaars.",
+    "iata": "JAI",
+    "lat": 26.8242,
+    "lon": 75.8122
+  },
+  {
+    "name": "Kerala Backwaters",
+    "country": "India",
+    "tags": [
+      "nature",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Houseboat cruises through palm-lined canals.",
+    "iata": "COK",
+    "lat": 10.151,
+    "lon": 76.4008
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "tags": [
+      "food",
+      "culture",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Bollywood energy, colonial architecture and street food icons.",
+    "iata": "BOM",
+    "lat": 19.0887,
+    "lon": 72.8679
+  },
+  {
+    "name": "Rishikesh",
+    "country": "India",
+    "tags": [
+      "relaxation",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "The yoga capital of the world, on the banks of the Ganges.",
+    "iata": "DED",
+    "lat": 30.1892,
+    "lon": 78.1767
+  },
+  {
+    "name": "Shimla & Manali",
+    "country": "India",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Colonial hill stations in the Himalayan foothills.",
+    "iata": "KUU",
+    "lat": 31.8767,
+    "lon": 77.1544
+  },
+  {
+    "name": "Udaipur",
+    "country": "India",
+    "tags": [
+      "history",
+      "culture",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A romantic lake city of palaces and reflections.",
+    "iata": "UDR",
+    "lat": 24.6177,
+    "lon": 73.8961
+  },
+  {
+    "name": "Varanasi",
+    "country": "India",
+    "tags": [
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 30,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Sacred ghats along the Ganges, among the world's oldest cities.",
+    "iata": "VNS",
+    "lat": 25.4522,
+    "lon": 82.8625
+  },
+  {
+    "name": "Bali",
+    "country": "Indonesia",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 5,
+    "idealLengthMax": 14,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Beaches, rice terraces, temples and a strong wellness/retreat scene.",
+    "iata": "DPS",
+    "lat": -8.7482,
+    "lon": 115.1675
+  },
+  {
+    "name": "Jakarta",
+    "country": "Indonesia",
+    "tags": [
+      "food",
+      "shopping",
+      "culture"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A sprawling megacity with huge malls and street-food alleys.",
+    "iata": "CGK",
+    "lat": -6.1256,
+    "lon": 106.656
+  },
+  {
+    "name": "Ubud",
+    "country": "Indonesia",
+    "tags": [
+      "relaxation",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Rice terraces, yoga retreats and Bali's cultural heartland.",
+    "iata": "DPS",
+    "lat": -8.7484,
+    "lon": 115.1671
+  },
+  {
+    "name": "Yogyakarta",
+    "country": "Indonesia",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Gateway to the ancient temples of Borobudur and Prambanan.",
+    "iata": "YIA",
+    "lat": -7.9053,
+    "lon": 110.0573
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland",
+    "tags": [
+      "nightlife",
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Literary pubs, live music and a famously warm atmosphere.",
+    "iata": "DUB",
+    "lat": 53.4287,
+    "lon": -6.2621
+  },
+  {
+    "name": "Tel Aviv & Jerusalem",
+    "country": "Israel",
+    "tags": [
+      "history",
+      "culture",
+      "beach",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Beach-city energy alongside some of the world's holiest sites.",
+    "iata": "TLV",
+    "lat": 32.0114,
+    "lon": 34.8867
+  },
+  {
+    "name": "Amalfi Coast",
+    "country": "Italy",
+    "tags": [
+      "beach",
+      "relaxation",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Cliffside villages, lemon groves and dramatic coastal drives.",
+    "iata": "NAP",
+    "lat": 40.886,
+    "lon": 14.2908
+  },
+  {
+    "name": "Cinque Terre",
+    "country": "Italy",
+    "tags": [
+      "nature",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Five colorful cliffside villages linked by coastal trails.",
+    "iata": "GOA",
+    "lat": 44.412,
+    "lon": 8.8407
+  },
+  {
+    "name": "Florence",
+    "country": "Italy",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 2,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Renaissance art, world-class galleries and Tuscan food.",
+    "iata": "FLR",
+    "lat": 43.8086,
+    "lon": 11.2028
+  },
+  {
+    "name": "Lake Como",
+    "country": "Italy",
+    "tags": [
+      "relaxation",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Calm lakeside towns, villas and gentle scenery.",
+    "iata": "MXP",
+    "lat": 45.6306,
+    "lon": 8.7281
+  },
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "tags": [
+      "shopping",
+      "culture",
+      "food",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Fashion capital with a striking cathedral and chic aperitivo bars.",
+    "iata": "MXP",
+    "lat": 45.6306,
+    "lon": 8.7281
+  },
+  {
+    "name": "Naples",
+    "country": "Italy",
+    "tags": [
+      "food",
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Birthplace of pizza, with Pompeii and Vesuvius nearby.",
+    "iata": "NAP",
+    "lat": 40.886,
+    "lon": 14.2908
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "tags": [
+      "history",
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Ancient ruins, world-class food and timeless art.",
+    "iata": "FCO",
+    "lat": 41.8003,
+    "lon": 12.2389
+  },
+  {
+    "name": "Sardinia",
+    "country": "Italy",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Turquoise water and some of the Mediterranean's best beaches.",
+    "iata": "CAG",
+    "lat": 39.2515,
+    "lon": 9.0543
+  },
+  {
+    "name": "Sicily",
+    "country": "Italy",
+    "tags": [
+      "beach",
+      "history",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Greek ruins, volcanoes and some of Italy's best food.",
+    "iata": "PMO",
+    "lat": 38.176,
+    "lon": 13.091
+  },
+  {
+    "name": "Tuscany Countryside",
+    "country": "Italy",
+    "tags": [
+      "relaxation",
+      "food",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Rolling vineyards, hilltop towns and slow country meals.",
+    "iata": "FLR",
+    "lat": 43.8086,
+    "lon": 11.2028
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Canals, gondolas and centuries of maritime history.",
+    "iata": "VCE",
+    "lat": 45.5053,
+    "lon": 12.3519
+  },
+  {
+    "name": "Montego Bay",
+    "country": "Jamaica",
+    "tags": [
+      "beach",
+      "nightlife",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Reggae beats and all-inclusive resorts on turquoise water.",
+    "iata": "MBJ",
+    "lat": 18.5034,
+    "lon": -77.9132
+  },
+  {
+    "name": "Fukuoka",
+    "country": "Japan",
+    "tags": [
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Ramen stalls and an easygoing pace on Japan's southern island.",
+    "iata": "FUK",
+    "lat": 33.5859,
+    "lon": 130.451
+  },
+  {
+    "name": "Hokkaido",
+    "country": "Japan",
+    "tags": [
+      "nature",
+      "adventure",
+      "food"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Powder snow, hot springs and seafood in Japan's wild north.",
+    "iata": "CTS",
+    "lat": 42.7748,
+    "lon": 141.6904
+  },
+  {
+    "name": "Kanazawa",
+    "country": "Japan",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "One of Japan's finest gardens plus a preserved samurai district.",
+    "iata": "KMQ",
+    "lat": 36.3934,
+    "lon": 136.4069
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 3,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Temples, gardens, traditional streets and seasonal scenery.",
+    "iata": "KIX",
+    "lat": 34.4347,
+    "lon": 135.244
+  },
+  {
+    "name": "Nagoya",
+    "country": "Japan",
+    "tags": [
+      "culture",
+      "food",
+      "history"
+    ],
+    "avgDailyCostUSD": 115,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A historic castle town and manufacturing hub between Tokyo and Osaka.",
+    "iata": "NKM",
+    "lat": 35.2558,
+    "lon": 136.9241
+  },
+  {
+    "name": "Okinawa",
+    "country": "Japan",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Subtropical islands with coral reefs and a distinct local culture.",
+    "iata": "OKA",
+    "lat": 26.1924,
+    "lon": 127.6398
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "tags": [
+      "food",
+      "nightlife",
+      "culture",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Japan's food capital, loud, friendly and full of street eats.",
+    "iata": "KIX",
+    "lat": 34.4273,
+    "lon": 135.244
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "tags": [
+      "food",
+      "shopping",
+      "nightlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 4,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Dense, electric city with endless food, shopping and nightlife.",
+    "iata": "HND",
+    "lat": 35.5494,
+    "lon": 139.7798
+  },
+  {
+    "name": "Petra & Amman",
+    "country": "Jordan",
+    "tags": [
+      "history",
+      "adventure",
+      "culture"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "An ancient rock-cut city and the red sands of Wadi Rum.",
+    "iata": "AMM",
+    "lat": 31.7226,
+    "lon": 35.9932
+  },
+  {
+    "name": "Almaty",
+    "country": "Kazakhstan",
+    "tags": [
+      "nature",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A green city at the foot of the Tian Shan mountains.",
+    "iata": "ALA",
+    "lat": 43.3543,
+    "lon": 77.0428
+  },
+  {
+    "name": "Kenya (Masai Mara)",
+    "country": "Kenya",
+    "tags": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 250,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Classic safari country with major wildlife migrations.",
+    "iata": "NBO",
+    "lat": -1.3192,
+    "lon": 36.9278
+  },
+  {
+    "name": "Mombasa",
+    "country": "Kenya",
+    "tags": [
+      "beach",
+      "relaxation",
+      "history"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Swahili coast beaches with a centuries-old old town.",
+    "iata": "MBA",
+    "lat": -4.0348,
+    "lon": 39.5942
+  },
+  {
+    "name": "Nairobi",
+    "country": "Kenya",
+    "tags": [
+      "culture",
+      "wildlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A capital with a national park inside the city limits.",
+    "iata": "NBO",
+    "lat": -1.3189,
+    "lon": 36.9282
+  },
+  {
+    "name": "Luang Prabang",
+    "country": "Laos",
+    "tags": [
+      "culture",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Saffron-robed monks, waterfalls and a slow Mekong pace.",
+    "iata": "LPQ",
+    "lat": 19.9043,
+    "lon": 102.1672
+  },
+  {
+    "name": "Vientiane",
+    "country": "Laos",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A quiet, French-influenced capital on the Mekong.",
+    "iata": "VTE",
+    "lat": 17.9851,
+    "lon": 102.5667
+  },
+  {
+    "name": "Riga",
+    "country": "Latvia",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Art Nouveau architecture and an easygoing old town.",
+    "iata": "RIX",
+    "lat": 56.9208,
+    "lon": 23.9707
+  },
+  {
+    "name": "Beirut",
+    "country": "Lebanon",
+    "tags": [
+      "food",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Mediterranean nightlife layered over centuries of history.",
+    "iata": "BEY",
+    "lat": 33.8198,
+    "lon": 35.4874
+  },
+  {
+    "name": "Vilnius",
+    "country": "Lithuania",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Baroque old town with a quiet, affordable charm.",
+    "iata": "VNO",
+    "lat": 54.6341,
+    "lon": 25.2858
+  },
+  {
+    "name": "Luxembourg City",
+    "country": "Luxembourg",
+    "tags": [
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Dramatic fortress gorges in a tiny, wealthy capital.",
+    "iata": "LUX",
+    "lat": 49.6268,
+    "lon": 6.2121
+  },
+  {
+    "name": "Macau",
+    "country": "Macau",
+    "tags": [
+      "nightlife",
+      "food",
+      "history",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Portuguese colonial streets next to Asia's biggest casinos.",
+    "iata": "MFM",
+    "lat": 22.1496,
+    "lon": 113.592
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "tags": [
+      "food",
+      "shopping",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Twin Towers skyline with excellent, cheap street food.",
+    "iata": "KUL",
+    "lat": 2.7456,
+    "lon": 101.71
+  },
+  {
+    "name": "Langkawi",
+    "country": "Malaysia",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Duty-free islands with jungle-backed beaches.",
+    "iata": "LGK",
+    "lat": 6.3297,
+    "lon": 99.7287
+  },
+  {
+    "name": "Penang",
+    "country": "Malaysia",
+    "tags": [
+      "food",
+      "culture",
+      "beach"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A UNESCO old town famous as Malaysia's street-food capital.",
+    "iata": "PEN",
+    "lat": 5.2963,
+    "lon": 100.2762
+  },
+  {
+    "name": "Maldives",
+    "country": "Maldives",
+    "tags": [
+      "beach",
+      "relaxation",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 350,
+    "idealLengthMin": 4,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Overwater villas, snorkelling and total relaxation.",
+    "iata": "MLE",
+    "lat": 4.1917,
+    "lon": 73.5293
+  },
+  {
+    "name": "Valletta & Malta",
+    "country": "Malta",
+    "tags": [
+      "history",
+      "beach",
+      "culture"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A fortified island capital with clear-water diving nearby.",
+    "iata": "MLA",
+    "lat": 35.8459,
+    "lon": 14.4915
+  },
+  {
+    "name": "Martinique",
+    "country": "Martinique",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A French Caribbean island with volcanic rainforest and beaches.",
+    "iata": "FDF",
+    "lat": 14.591,
+    "lon": -61.0032
+  },
+  {
+    "name": "Mauritius",
+    "country": "Mauritius",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 220,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Turquoise lagoons and a classic honeymoon island.",
+    "iata": "MRU",
+    "lat": -20.4302,
+    "lon": 57.6836
+  },
+  {
+    "name": "Cancun & Riviera Maya",
+    "country": "Mexico",
+    "tags": [
+      "beach",
+      "nightlife",
+      "relaxation",
+      "history"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Turquoise Caribbean beaches and nearby Mayan ruins.",
+    "iata": "CUN",
+    "lat": 21.0408,
+    "lon": -86.8735
+  },
+  {
+    "name": "Guadalajara",
+    "country": "Mexico",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Birthplace of mariachi and tequila, with a grand historic center.",
+    "iata": "GDL",
+    "lat": 20.5233,
+    "lon": -103.3101
+  },
+  {
+    "name": "Los Cabos",
+    "country": "Mexico",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Desert meets sea at the tip of the Baja peninsula.",
+    "iata": "SJD",
+    "lat": 23.1519,
+    "lon": -109.7207
+  },
+  {
+    "name": "Merida & Yucatan",
+    "country": "Mexico",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Colonial streets close to cenotes and Mayan ruins.",
+    "iata": "MID",
+    "lat": 20.9305,
+    "lon": -89.6455
+  },
+  {
+    "name": "Mexico City",
+    "country": "Mexico",
+    "tags": [
+      "food",
+      "culture",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "World-class museums, murals and an unmatched taco scene.",
+    "iata": "MEX",
+    "lat": 19.4358,
+    "lon": -99.0703
+  },
+  {
+    "name": "Oaxaca",
+    "country": "Mexico",
+    "tags": [
+      "food",
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Mezcal, mole and some of Mexico's richest culinary traditions.",
+    "iata": "OAX",
+    "lat": 16.9988,
+    "lon": -96.7261
+  },
+  {
+    "name": "Puerto Vallarta",
+    "country": "Mexico",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A cobblestone beach town on the Pacific coast.",
+    "iata": "PVR",
+    "lat": 20.6799,
+    "lon": -105.2544
+  },
+  {
+    "name": "San Miguel de Allende",
+    "country": "Mexico",
+    "tags": [
+      "culture",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A cobblestone colonial town known for its arts scene.",
+    "iata": "BJX",
+    "lat": 20.9927,
+    "lon": -101.4803
+  },
+  {
+    "name": "Tulum",
+    "country": "Mexico",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Bohemian beach clubs next to clifftop Mayan ruins.",
+    "iata": "TQO",
+    "lat": 20.1721,
+    "lon": -87.6603
+  },
+  {
+    "name": "Monaco",
+    "country": "Monaco",
+    "tags": [
+      "nightlife",
+      "shopping",
+      "culture"
+    ],
+    "avgDailyCostUSD": 300,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Glamorous casinos and yacht-lined harbors on the Riviera.",
+    "iata": "NCE",
+    "lat": 43.6584,
+    "lon": 7.2159
+  },
+  {
+    "name": "Kotor",
+    "country": "Montenegro",
+    "tags": [
+      "nature",
+      "history",
+      "beach"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 2,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A walled town on a dramatic fjord-like bay.",
+    "iata": "TIV",
+    "lat": 42.4047,
+    "lon": 18.7233
+  },
+  {
+    "name": "Agadir",
+    "country": "Morocco",
+    "tags": [
+      "beach",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A rebuilt resort city with long Atlantic beaches.",
+    "iata": "AGA",
+    "lat": 30.3225,
+    "lon": -9.412
+  },
+  {
+    "name": "Casablanca",
+    "country": "Morocco",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A modern coastal city anchored by a grand mosque.",
+    "iata": "CMN",
+    "lat": 33.3675,
+    "lon": -7.59
+  },
+  {
+    "name": "Chefchaouen",
+    "country": "Morocco",
+    "tags": [
+      "culture",
+      "relaxation",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A famous blue-washed mountain town.",
+    "iata": "TNG",
+    "lat": 35.7317,
+    "lon": -5.9215
+  },
+  {
+    "name": "Essaouira",
+    "country": "Morocco",
+    "tags": [
+      "beach",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A windswept fishing port with a walled medina.",
+    "iata": "ESU",
+    "lat": 31.3975,
+    "lon": -9.6817
+  },
+  {
+    "name": "Fes",
+    "country": "Morocco",
+    "tags": [
+      "culture",
+      "history",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The world's largest car-free old city, full of ancient tanneries.",
+    "iata": "FEZ",
+    "lat": 33.9273,
+    "lon": -4.978
+  },
+  {
+    "name": "Marrakech",
+    "country": "Morocco",
+    "tags": [
+      "culture",
+      "shopping",
+      "food",
+      "history",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Markets, desert day-trips, riads and rich history.",
+    "iata": "RAK",
+    "lat": 31.6069,
+    "lon": -8.0363
+  },
+  {
+    "name": "Mozambique (Bazaruto)",
+    "country": "Mozambique",
+    "tags": [
+      "beach",
+      "relaxation",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Pristine dune islands off the Indian Ocean coast.",
+    "iata": "VNX",
+    "lat": -22.0184,
+    "lon": 35.3133
+  },
+  {
+    "name": "Yangon & Bagan",
+    "country": "Myanmar",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Thousands of ancient temples scattered across a dusty plain.",
+    "iata": "RGN",
+    "lat": 16.9073,
+    "lon": 96.1332
+  },
+  {
+    "name": "Namibia (Namib Desert)",
+    "country": "Namibia",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 6,
+    "idealLengthMax": 12,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Towering red dunes and vast, empty desert landscapes.",
+    "iata": "WDH",
+    "lat": -22.4799,
+    "lon": 17.4709
+  },
+  {
+    "name": "Kathmandu",
+    "country": "Nepal",
+    "tags": [
+      "culture",
+      "history",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Ancient temple squares and the gateway to the Himalayas.",
+    "iata": "KTM",
+    "lat": 27.6966,
+    "lon": 85.3591
+  },
+  {
+    "name": "Pokhara & Annapurna",
+    "country": "Nepal",
+    "tags": [
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 5,
+    "idealLengthMax": 12,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Lakeside town and trailhead for classic Himalayan treks.",
+    "iata": "PHH",
+    "lat": 28.1838,
+    "lon": 84.0147
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "tags": [
+      "culture",
+      "nightlife",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Canals, museums and a famously liberal nightlife scene.",
+    "iata": "AMS",
+    "lat": 52.3086,
+    "lon": 4.7639
+  },
+  {
+    "name": "Rotterdam",
+    "country": "Netherlands",
+    "tags": [
+      "culture",
+      "shopping",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Bold modern architecture rebuilt after wartime destruction.",
+    "iata": "RTM",
+    "lat": 51.9569,
+    "lon": 4.4372
+  },
+  {
+    "name": "New Caledonia",
+    "country": "New Caledonia",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A French-flavored archipelago around the world's largest lagoon.",
+    "iata": "NOU",
+    "lat": -22.0146,
+    "lon": 166.213
+  },
+  {
+    "name": "Auckland",
+    "country": "New Zealand",
+    "tags": [
+      "culture",
+      "nature",
+      "food"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A harbor city surrounded by volcanic islands and vineyards.",
+    "iata": "AKL",
+    "lat": -37.012,
+    "lon": 174.7863
+  },
+  {
+    "name": "Christchurch",
+    "country": "New Zealand",
+    "tags": [
+      "culture",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Gateway to the Southern Alps, rebuilt with striking modern design.",
+    "iata": "CHC",
+    "lat": -43.489,
+    "lon": 172.5321
+  },
+  {
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "tags": [
+      "adventure",
+      "nature",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Bungee jumping, hiking, lakes and dramatic alpine scenery.",
+    "iata": "ZQN",
+    "lat": -45.0211,
+    "lon": 168.7392
+  },
+  {
+    "name": "Rotorua",
+    "country": "New Zealand",
+    "tags": [
+      "nature",
+      "adventure",
+      "culture"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Geothermal geysers and rich Maori cultural experiences.",
+    "iata": "ROT",
+    "lat": -38.1092,
+    "lon": 176.317
+  },
+  {
+    "name": "Wellington",
+    "country": "New Zealand",
+    "tags": [
+      "culture",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A hilly, windy capital with a strong arts and coffee scene.",
+    "iata": "WLG",
+    "lat": -41.3268,
+    "lon": 174.8069
+  },
+  {
+    "name": "Granada",
+    "country": "Nicaragua",
+    "tags": [
+      "history",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Colonial charm on the shores of a volcano-ringed lake.",
+    "iata": "MGA",
+    "lat": 12.1415,
+    "lon": -86.1682
+  },
+  {
+    "name": "Lagos",
+    "country": "Nigeria",
+    "tags": [
+      "nightlife",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "West Africa's largest city and a major music and arts hub.",
+    "iata": "LOS",
+    "lat": 6.5774,
+    "lon": 3.3212
+  },
+  {
+    "name": "Bergen & Fjords",
+    "country": "Norway",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 190,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Colorful harbor city and the gateway to Norway's famous fjords.",
+    "iata": "BGO",
+    "lat": 60.2934,
+    "lon": 5.2181
+  },
+  {
+    "name": "Lofoten Islands",
+    "country": "Norway",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Dramatic peaks rising straight from the sea, with midnight sun or northern lights.",
+    "iata": "LKN",
+    "lat": 68.1525,
+    "lon": 13.6094
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "tags": [
+      "nature",
+      "culture",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Fjord-side capital with excellent museums and nearby hiking.",
+    "iata": "OSL",
+    "lat": 60.1939,
+    "lon": 11.1004
+  },
+  {
+    "name": "Muscat",
+    "country": "Oman",
+    "tags": [
+      "culture",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Dramatic desert mountains and a laid-back coastal capital.",
+    "iata": "MCT",
+    "lat": 23.6002,
+    "lon": 58.2853
+  },
+  {
+    "name": "Panama City",
+    "country": "Panama",
+    "tags": [
+      "culture",
+      "history",
+      "nature"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A modern skyline beside the historic canal and old town.",
+    "iata": "PTY",
+    "lat": 9.0714,
+    "lon": -79.3835
+  },
+  {
+    "name": "Asuncion",
+    "country": "Paraguay",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A quiet riverside capital with Jesuit mission history nearby.",
+    "iata": "ASU",
+    "lat": -25.2402,
+    "lon": -57.5192
+  },
+  {
+    "name": "Cusco & Machu Picchu",
+    "country": "Peru",
+    "tags": [
+      "history",
+      "culture",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The Inca capital and the trek to the lost city above the clouds.",
+    "iata": "CUZ",
+    "lat": -13.5357,
+    "lon": -71.9388
+  },
+  {
+    "name": "Lima",
+    "country": "Peru",
+    "tags": [
+      "food",
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A coastal capital widely considered South America's food capital.",
+    "iata": "LIM",
+    "lat": -12.0219,
+    "lon": -77.1143
+  },
+  {
+    "name": "Boracay",
+    "country": "Philippines",
+    "tags": [
+      "beach",
+      "nightlife",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 55,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Powder-white sand and a lively beachfront strip.",
+    "iata": "MPH",
+    "lat": 11.9245,
+    "lon": 121.954
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "tags": [
+      "culture",
+      "food",
+      "nightlife",
+      "history"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A fast-paced capital mixing Spanish history with modern energy.",
+    "iata": "MNL",
+    "lat": 14.5086,
+    "lon": 121.02
+  },
+  {
+    "name": "Palawan",
+    "country": "Philippines",
+    "tags": [
+      "beach",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Lagoons, limestone cliffs and some of the world's best diving.",
+    "iata": "PPS",
+    "lat": 9.742,
+    "lon": 118.7591
+  },
+  {
+    "name": "Gdansk",
+    "country": "Poland",
+    "tags": [
+      "history",
+      "culture",
+      "beach"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Hanseatic architecture on the Baltic coast.",
+    "iata": "GDN",
+    "lat": 54.3776,
+    "lon": 18.4662
+  },
+  {
+    "name": "Krakow",
+    "country": "Poland",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A beautifully preserved medieval square and deep WWII history.",
+    "iata": "KRK",
+    "lat": 50.0777,
+    "lon": 19.7848
+  },
+  {
+    "name": "Warsaw",
+    "country": "Poland",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A rebuilt old town alongside a modern, fast-growing capital.",
+    "iata": "WAW",
+    "lat": 52.1657,
+    "lon": 20.9671
+  },
+  {
+    "name": "Algarve",
+    "country": "Portugal",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Dramatic cliffs, golden beaches and a popular golf scene.",
+    "iata": "FAO",
+    "lat": 37.0159,
+    "lon": -7.9709
+  },
+  {
+    "name": "Azores",
+    "country": "Portugal",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Volcanic islands with crater lakes and whale watching.",
+    "iata": "PDL",
+    "lat": 37.7412,
+    "lon": -25.6979
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "tags": [
+      "culture",
+      "food",
+      "history",
+      "nightlife",
+      "beach"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 3,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Hilly, colourful streets, great food scene, nearby beaches.",
+    "iata": "LIS",
+    "lat": 38.7813,
+    "lon": -9.1359
+  },
+  {
+    "name": "Madeira",
+    "country": "Portugal",
+    "tags": [
+      "nature",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Lush cliffside hiking trails and a mild year-round climate.",
+    "iata": "FNC",
+    "lat": 32.6978,
+    "lon": -16.7746
+  },
+  {
+    "name": "Porto",
+    "country": "Portugal",
+    "tags": [
+      "food",
+      "culture",
+      "history",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 85,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Port wine cellars and tiled riverside streets.",
+    "iata": "OPO",
+    "lat": 41.2481,
+    "lon": -8.6814
+  },
+  {
+    "name": "San Juan",
+    "country": "Puerto Rico",
+    "tags": [
+      "beach",
+      "history",
+      "nightlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Colorful colonial streets backed by a lively beach scene.",
+    "iata": "SJU",
+    "lat": 18.4394,
+    "lon": -66.0018
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "tags": [
+      "culture",
+      "shopping",
+      "food"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "A modern skyline alongside a traditional waterfront souq.",
+    "iata": "DOH",
+    "lat": 25.2731,
+    "lon": 51.6081
+  },
+  {
+    "name": "Reunion Island",
+    "country": "Reunion",
+    "tags": [
+      "nature",
+      "adventure",
+      "beach"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A volcanic French island with dramatic canyons and lagoons.",
+    "iata": "RUN",
+    "lat": -20.8901,
+    "lon": 55.5189
+  },
+  {
+    "name": "Bucharest",
+    "country": "Romania",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Belle Époque boulevards and a fast-growing nightlife scene.",
+    "iata": "BBU",
+    "lat": 44.5031,
+    "lon": 26.1029
+  },
+  {
+    "name": "Transylvania",
+    "country": "Romania",
+    "tags": [
+      "history",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Medieval towns, castles and forested mountains.",
+    "iata": "GHV",
+    "lat": 45.7056,
+    "lon": 25.5229
+  },
+  {
+    "name": "Rwanda (Gorilla Trekking)",
+    "country": "Rwanda",
+    "tags": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 300,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Trek through misty forest to see mountain gorillas up close.",
+    "iata": "KGL",
+    "lat": -1.9686,
+    "lon": 30.1395
+  },
+  {
+    "name": "Saint Lucia",
+    "country": "Saint Lucia",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "Dramatic twin volcanic peaks rising from the sea, popular for honeymoons.",
+    "iata": "UVF",
+    "lat": 13.7332,
+    "lon": -60.9526
+  },
+  {
+    "name": "Samoa",
+    "country": "Samoa",
+    "tags": [
+      "beach",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Traditional village life alongside untouched beaches.",
+    "iata": "APW",
+    "lat": -13.83,
+    "lon": -172.008
+  },
+  {
+    "name": "AlUla",
+    "country": "Saudi Arabia",
+    "tags": [
+      "history",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Monumental rock-cut tombs in a dramatic desert canyon.",
+    "iata": "ULH",
+    "lat": 26.4836,
+    "lon": 38.117
+  },
+  {
+    "name": "Riyadh",
+    "country": "Saudi Arabia",
+    "tags": [
+      "culture",
+      "shopping",
+      "food"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "A fast-modernizing capital opening up to international visitors.",
+    "iata": "RUH",
+    "lat": 24.9576,
+    "lon": 46.6988
+  },
+  {
+    "name": "Dakar",
+    "country": "Senegal",
+    "tags": [
+      "culture",
+      "beach",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A vibrant West African capital with music, markets and coastline.",
+    "iata": "DKR",
+    "lat": 14.7423,
+    "lon": -17.4792
+  },
+  {
+    "name": "Belgrade",
+    "country": "Serbia",
+    "tags": [
+      "nightlife",
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A gritty, energetic city famous for its riverside nightlife.",
+    "iata": "BEG",
+    "lat": 44.8184,
+    "lon": 20.3091
+  },
+  {
+    "name": "Seychelles",
+    "country": "Seychelles",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 280,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Quiet beaches, granite islands and secluded resorts.",
+    "iata": "SEZ",
+    "lat": -4.6743,
+    "lon": 55.5218
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "tags": [
+      "food",
+      "shopping",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Ultra-clean city-state with incredible hawker food and gardens.",
+    "iata": "SIN",
+    "lat": 1.3502,
+    "lon": 103.994
+  },
+  {
+    "name": "Bratislava",
+    "country": "Slovakia",
+    "tags": [
+      "history",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A small riverside capital with an easy castle-top view.",
+    "iata": "BTS",
+    "lat": 48.1702,
+    "lon": 17.2127
+  },
+  {
+    "name": "Ljubljana & Lake Bled",
+    "country": "Slovenia",
+    "tags": [
+      "nature",
+      "culture",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A charming riverside capital next to an alpine lake with an island church.",
+    "iata": "LJU",
+    "lat": 46.2237,
+    "lon": 14.4576
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife",
+      "food",
+      "beach"
+    ],
+    "avgDailyCostUSD": 85,
+    "idealLengthMin": 5,
+    "idealLengthMax": 12,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Mountains, coastline, wine country and nearby safari access.",
+    "iata": "CPT",
+    "lat": -33.9715,
+    "lon": 18.6021
+  },
+  {
+    "name": "Johannesburg",
+    "country": "South Africa",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult"
+    ],
+    "description": "A gateway city with deep apartheid-era history and strong food scene.",
+    "iata": "JNB",
+    "lat": -26.1401,
+    "lon": 28.2468
+  },
+  {
+    "name": "Kruger National Park",
+    "country": "South Africa",
+    "tags": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 220,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "One of Africa's largest game reserves, famous for the Big Five.",
+    "iata": "MQP",
+    "lat": -25.3833,
+    "lon": 31.1053
+  },
+  {
+    "name": "Busan",
+    "country": "South Korea",
+    "tags": [
+      "beach",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Beaches, seafood markets and a mountain-backed coastline.",
+    "iata": "PUS",
+    "lat": 35.1795,
+    "lon": 128.938
+  },
+  {
+    "name": "Gyeongju",
+    "country": "South Korea",
+    "tags": [
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "An open-air museum of ancient Korean royal tombs and temples.",
+    "iata": "USN",
+    "lat": 35.5935,
+    "lon": 129.352
+  },
+  {
+    "name": "Jeju Island",
+    "country": "South Korea",
+    "tags": [
+      "nature",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Volcanic landscapes, waterfalls and a honeymoon-favorite coastline.",
+    "iata": "CJU",
+    "lat": 33.5121,
+    "lon": 126.4925
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea",
+    "tags": [
+      "food",
+      "shopping",
+      "nightlife",
+      "culture"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Palaces and K-pop culture packed into a neon-lit megacity.",
+    "iata": "ICN",
+    "lat": 37.4691,
+    "lon": 126.451
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "tags": [
+      "culture",
+      "nightlife",
+      "food",
+      "beach",
+      "history"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 3,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Architecture, beach access and one of Europe's best nightlife scenes.",
+    "iata": "BCN",
+    "lat": 41.2974,
+    "lon": 2.0833
+  },
+  {
+    "name": "Bilbao",
+    "country": "Spain",
+    "tags": [
+      "culture",
+      "food",
+      "history"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "The Guggenheim Museum sparked a renaissance in this Basque city.",
+    "iata": "BIO",
+    "lat": 43.3011,
+    "lon": -2.9106
+  },
+  {
+    "name": "Gran Canaria",
+    "country": "Spain",
+    "tags": [
+      "beach",
+      "nature",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 90,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Dunes, mountains and beach resorts packed into one island.",
+    "iata": "LPA",
+    "lat": 27.9319,
+    "lon": -15.3866
+  },
+  {
+    "name": "Granada",
+    "country": "Spain",
+    "tags": [
+      "culture",
+      "history",
+      "food"
+    ],
+    "avgDailyCostUSD": 85,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The Alhambra palace and a lively tapas-bar old town.",
+    "iata": "GRX",
+    "lat": 37.1887,
+    "lon": -3.7774
+  },
+  {
+    "name": "Ibiza",
+    "country": "Spain",
+    "tags": [
+      "nightlife",
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "World-famous clubs by night, quiet coves by day.",
+    "iata": "IBZ",
+    "lat": 38.8729,
+    "lon": 1.3731
+  },
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "tags": [
+      "culture",
+      "nightlife",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 115,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Grand boulevards, tapas culture and world-class art museums.",
+    "iata": "MAD",
+    "lat": 40.4934,
+    "lon": -3.5722
+  },
+  {
+    "name": "Malaga & Costa del Sol",
+    "country": "Spain",
+    "tags": [
+      "beach",
+      "culture",
+      "food",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 100,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Sunny beaches with a surprisingly deep arts scene.",
+    "iata": "AGP",
+    "lat": 36.6782,
+    "lon": -4.5002
+  },
+  {
+    "name": "Mallorca",
+    "country": "Spain",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nature",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Mediterranean beaches, mountain villages and a lively capital.",
+    "iata": "PMI",
+    "lat": 39.5517,
+    "lon": 2.7388
+  },
+  {
+    "name": "San Sebastian",
+    "country": "Spain",
+    "tags": [
+      "food",
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Michelin-starred pintxos bars on a beautiful bay.",
+    "iata": "EAS",
+    "lat": 43.3565,
+    "lon": -1.7906
+  },
+  {
+    "name": "Seville",
+    "country": "Spain",
+    "tags": [
+      "culture",
+      "history",
+      "food",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Flamenco, Moorish palaces and orange-tree-lined plazas.",
+    "iata": "SVQ",
+    "lat": 37.418,
+    "lon": -5.8931
+  },
+  {
+    "name": "Tenerife",
+    "country": "Spain",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Volcanic landscapes and year-round sun in the Canary Islands.",
+    "iata": "TFN",
+    "lat": 28.4828,
+    "lon": -16.3417
+  },
+  {
+    "name": "Valencia",
+    "country": "Spain",
+    "tags": [
+      "beach",
+      "food",
+      "culture",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 95,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "City beaches, futuristic architecture and the home of paella.",
+    "iata": "VLC",
+    "lat": 39.4892,
+    "lon": -0.481
+  },
+  {
+    "name": "Colombo & Galle",
+    "country": "Sri Lanka",
+    "tags": [
+      "beach",
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 5,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Colonial forts, palm-lined beaches and train rides through tea country.",
+    "iata": "CMB",
+    "lat": 7.1808,
+    "lon": 79.8841
+  },
+  {
+    "name": "Gothenburg",
+    "country": "Sweden",
+    "tags": [
+      "food",
+      "culture",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 145,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A relaxed harbor city known for seafood and nearby archipelago trips.",
+    "iata": "GOT",
+    "lat": 57.6628,
+    "lon": 12.2798
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "tags": [
+      "culture",
+      "food",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A waterfront old town spread across fourteen islands.",
+    "iata": "ARN",
+    "lat": 59.6485,
+    "lon": 17.9288
+  },
+  {
+    "name": "Basel",
+    "country": "Switzerland",
+    "tags": [
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A compact art-focused city on the Rhine, bordering three countries.",
+    "iata": "BSL",
+    "lat": 47.6007,
+    "lon": 7.5211
+  },
+  {
+    "name": "Geneva",
+    "country": "Switzerland",
+    "tags": [
+      "culture",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 230,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Lakefront city with views of Mont Blanc and a refined pace.",
+    "iata": "GVA",
+    "lat": 46.2381,
+    "lon": 6.109
+  },
+  {
+    "name": "Lucerne",
+    "country": "Switzerland",
+    "tags": [
+      "nature",
+      "relaxation",
+      "culture"
+    ],
+    "avgDailyCostUSD": 210,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A postcard lake town surrounded by snow-capped peaks.",
+    "iata": "ZRH",
+    "lat": 47.4581,
+    "lon": 8.5481
+  },
+  {
+    "name": "Swiss Alps (Interlaken)",
+    "country": "Switzerland",
+    "tags": [
+      "adventure",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Hiking, paragliding, lakes and mountain scenery.",
+    "iata": "ZRH",
+    "lat": 47.4647,
+    "lon": 8.5492
+  },
+  {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "tags": [
+      "culture",
+      "relaxation",
+      "nature"
+    ],
+    "avgDailyCostUSD": 220,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Lakeside elegance with easy access to the mountains.",
+    "iata": "ZRH",
+    "lat": 47.4581,
+    "lon": 8.5481
+  },
+  {
+    "name": "Taipei",
+    "country": "Taiwan",
+    "tags": [
+      "food",
+      "culture",
+      "nightlife",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 80,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Night markets, hot springs and a skyline capped by Taipei 101.",
+    "iata": "TSA",
+    "lat": 25.0672,
+    "lon": 121.5528
+  },
+  {
+    "name": "Taroko Gorge",
+    "country": "Taiwan",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A marble-walled canyon with dramatic hiking trails.",
+    "iata": "HUN",
+    "lat": 24.0232,
+    "lon": 121.618
+  },
+  {
+    "name": "Serengeti",
+    "country": "Tanzania",
+    "tags": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 280,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Endless plains and the setting for the great wildebeest migration.",
+    "iata": "JRO",
+    "lat": -3.427,
+    "lon": 37.0735
+  },
+  {
+    "name": "Zanzibar",
+    "country": "Tanzania",
+    "tags": [
+      "beach",
+      "relaxation",
+      "history"
+    ],
+    "avgDailyCostUSD": 110,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Spice-island beaches and a historic Stone Town.",
+    "iata": "ZNZ",
+    "lat": -6.222,
+    "lon": 39.2249
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "tags": [
+      "food",
+      "nightlife",
+      "culture",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 4,
+    "idealLengthMax": 10,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A buzzing mix of street food, temples, markets and nightlife.",
+    "iata": "BKK",
+    "lat": 13.69,
+    "lon": 100.7501
+  },
+  {
+    "name": "Chiang Mai",
+    "country": "Thailand",
+    "tags": [
+      "culture",
+      "food",
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 40,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Temples, night markets and jungle day trips in the north.",
+    "iata": "CNX",
+    "lat": 18.7668,
+    "lon": 98.9626
+  },
+  {
+    "name": "Koh Samui",
+    "country": "Thailand",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Palm-lined beaches with both quiet resorts and full-moon parties nearby.",
+    "iata": "USM",
+    "lat": 9.5478,
+    "lon": 100.062
+  },
+  {
+    "name": "Krabi",
+    "country": "Thailand",
+    "tags": [
+      "beach",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Limestone cliffs, rock climbing and island-hopping boat trips.",
+    "iata": "KBV",
+    "lat": 8.0956,
+    "lon": 98.989
+  },
+  {
+    "name": "Phuket",
+    "country": "Thailand",
+    "tags": [
+      "beach",
+      "nightlife",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 60,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Thailand's biggest island, with beaches for every mood.",
+    "iata": "HKT",
+    "lat": 8.1133,
+    "lon": 98.3174
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "country": "Trinidad and Tobago",
+    "tags": [
+      "nightlife",
+      "beach",
+      "nature"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "The birthplace of Carnival, calypso and steelpan music.",
+    "iata": "POS",
+    "lat": 10.5954,
+    "lon": -61.3376
+  },
+  {
+    "name": "Tunis & Carthage",
+    "country": "Tunisia",
+    "tags": [
+      "history",
+      "beach",
+      "culture"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Roman ruins on the Mediterranean coast.",
+    "iata": "TUN",
+    "lat": 36.851,
+    "lon": 10.2272
+  },
+  {
+    "name": "Cappadocia",
+    "country": "Turkey",
+    "tags": [
+      "adventure",
+      "nature",
+      "culture"
+    ],
+    "avgDailyCostUSD": 70,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Fairy-chimney valleys best seen from a sunrise hot air balloon.",
+    "iata": "NAV",
+    "lat": 38.7719,
+    "lon": 34.5345
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "tags": [
+      "history",
+      "culture",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 75,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A city spanning two continents, full of bazaars and mosques.",
+    "iata": "IST",
+    "lat": 41.2749,
+    "lon": 28.7321
+  },
+  {
+    "name": "Turkish Riviera (Antalya)",
+    "country": "Turkey",
+    "tags": [
+      "beach",
+      "relaxation",
+      "history"
+    ],
+    "avgDailyCostUSD": 65,
+    "idealLengthMin": 4,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Affordable beach resorts backed by mountains and ruins.",
+    "iata": "AYT",
+    "lat": 36.8987,
+    "lon": 30.8005
+  },
+  {
+    "name": "Turks and Caicos",
+    "country": "Turks and Caicos Islands",
+    "tags": [
+      "beach",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 250,
+    "idealLengthMin": 5,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Some of the clearest, calmest water in the Caribbean.",
+    "iata": "PLS",
+    "lat": 21.7737,
+    "lon": -72.2683
+  },
+  {
+    "name": "Abu Dhabi",
+    "country": "UAE",
+    "tags": [
+      "culture",
+      "shopping",
+      "food"
+    ],
+    "avgDailyCostUSD": 190,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Grand mosques, museums and a calmer alternative to Dubai.",
+    "iata": "AUH",
+    "lat": 24.441,
+    "lon": 54.6492
+  },
+  {
+    "name": "Dubai",
+    "country": "UAE",
+    "tags": [
+      "shopping",
+      "nightlife",
+      "food",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Futuristic skyline, desert safaris and high-end shopping.",
+    "iata": "DXB",
+    "lat": 25.2498,
+    "lon": 55.371
+  },
+  {
+    "name": "Uganda (Source of the Nile)",
+    "country": "Uganda",
+    "tags": [
+      "wildlife",
+      "adventure",
+      "nature"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "White-water rafting and primate trekking in the pearl of Africa.",
+    "iata": "EBB",
+    "lat": 0.0424,
+    "lon": 32.4435
+  },
+  {
+    "name": "Cornwall",
+    "country": "United Kingdom",
+    "tags": [
+      "beach",
+      "relaxation",
+      "food"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Rugged coastal paths and England's surf scene.",
+    "iata": "NQY",
+    "lat": 50.4406,
+    "lon": -4.9954
+  },
+  {
+    "name": "Cotswolds",
+    "country": "United Kingdom",
+    "tags": [
+      "relaxation",
+      "nature",
+      "history"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Honey-stone villages and gentle countryside walks.",
+    "iata": "LHR",
+    "lat": 51.4707,
+    "lon": -0.4599
+  },
+  {
+    "name": "Edinburgh",
+    "country": "United Kingdom",
+    "tags": [
+      "culture",
+      "history",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A dramatic hilltop castle, old-town closes and a famous festival scene.",
+    "iata": "EDI",
+    "lat": 55.9501,
+    "lon": -3.3723
+  },
+  {
+    "name": "Isle of Skye",
+    "country": "United Kingdom",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 140,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Jagged peaks and fairy pools in the Scottish Highlands.",
+    "iata": "INV",
+    "lat": 57.5425,
+    "lon": -4.0475
+  },
+  {
+    "name": "Lake District",
+    "country": "United Kingdom",
+    "tags": [
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "England's best-loved hiking country, dotted with glacial lakes.",
+    "iata": "MAN",
+    "lat": 53.3494,
+    "lon": -2.2795
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "tags": [
+      "culture",
+      "history",
+      "shopping",
+      "nightlife",
+      "food"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "World-class museums, theatre and endless neighborhoods to explore.",
+    "iata": "LHR",
+    "lat": 51.4707,
+    "lon": -0.4599
+  },
+  {
+    "name": "York",
+    "country": "United Kingdom",
+    "tags": [
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 125,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Roman and Viking history inside intact medieval walls.",
+    "iata": "LBA",
+    "lat": 53.8659,
+    "lon": -1.6606
+  },
+  {
+    "name": "Montevideo",
+    "country": "Uruguay",
+    "tags": [
+      "culture",
+      "beach",
+      "food"
+    ],
+    "avgDailyCostUSD": 85,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A relaxed riverside capital with a famous grilled-meat culture.",
+    "iata": "MVD",
+    "lat": -34.8356,
+    "lon": -56.0265
+  },
+  {
+    "name": "St. Thomas",
+    "country": "US Virgin Islands",
+    "tags": [
+      "beach",
+      "relaxation",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 190,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Duty-free shopping and some of the Caribbean's best beaches.",
+    "iata": "STT",
+    "lat": 18.3371,
+    "lon": -64.9773
+  },
+  {
+    "name": "Anchorage & Alaska",
+    "country": "USA",
+    "tags": [
+      "nature",
+      "wildlife",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Glaciers, wildlife and vast wilderness at the edge of the map.",
+    "iata": "ANC",
+    "lat": 61.179,
+    "lon": -149.9926
+  },
+  {
+    "name": "Austin",
+    "country": "USA",
+    "tags": [
+      "nightlife",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Live music, barbecue and a famously quirky local culture.",
+    "iata": "AUS",
+    "lat": 30.1975,
+    "lon": -97.662
+  },
+  {
+    "name": "Boston",
+    "country": "USA",
+    "tags": [
+      "history",
+      "culture",
+      "food"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Revolutionary-era history in a compact, walkable city.",
+    "iata": "BOS",
+    "lat": 42.362,
+    "lon": -71.0079
+  },
+  {
+    "name": "Charleston",
+    "country": "USA",
+    "tags": [
+      "history",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Antebellum architecture and some of the South's best food.",
+    "iata": "CHS",
+    "lat": 32.8962,
+    "lon": -80.0382
+  },
+  {
+    "name": "Chicago",
+    "country": "USA",
+    "tags": [
+      "culture",
+      "food",
+      "shopping",
+      "history"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Lakefront skyline, deep-dish pizza and strong architecture tours.",
+    "iata": "ORD",
+    "lat": 41.9786,
+    "lon": -87.9048
+  },
+  {
+    "name": "Denver",
+    "country": "USA",
+    "tags": [
+      "nature",
+      "adventure",
+      "food"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Gateway to the Rocky Mountains with a lively downtown.",
+    "iata": "DEN",
+    "lat": 39.86,
+    "lon": -104.6738
+  },
+  {
+    "name": "Grand Canyon",
+    "country": "USA",
+    "tags": [
+      "nature",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 120,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "One of the world's most dramatic natural landmarks.",
+    "iata": "FLG",
+    "lat": 35.1398,
+    "lon": -111.6698
+  },
+  {
+    "name": "Hawaii (Oahu)",
+    "country": "USA",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 230,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Volcanic coastlines, surfing and lush tropical hikes.",
+    "iata": "HNL",
+    "lat": 21.3184,
+    "lon": -157.9257
+  },
+  {
+    "name": "Las Vegas",
+    "country": "USA",
+    "tags": [
+      "nightlife",
+      "shopping",
+      "food"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Casinos, shows and an endlessly lit strip.",
+    "iata": "LAS",
+    "lat": 36.0834,
+    "lon": -115.1518
+  },
+  {
+    "name": "Los Angeles",
+    "country": "USA",
+    "tags": [
+      "culture",
+      "beach",
+      "shopping",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 200,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Hollywood, beaches and a huge spread of neighborhoods to explore.",
+    "iata": "LAX",
+    "lat": 33.9425,
+    "lon": -118.408
+  },
+  {
+    "name": "Maui",
+    "country": "USA",
+    "tags": [
+      "beach",
+      "nature",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 250,
+    "idealLengthMin": 5,
+    "idealLengthMax": 9,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "The famous Road to Hana and quieter, upscale beaches.",
+    "iata": "OGG",
+    "lat": 20.8963,
+    "lon": -156.4318
+  },
+  {
+    "name": "Miami",
+    "country": "USA",
+    "tags": [
+      "beach",
+      "nightlife",
+      "food",
+      "shopping"
+    ],
+    "avgDailyCostUSD": 190,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Art Deco beaches and a Latin-influenced nightlife scene.",
+    "iata": "MIA",
+    "lat": 25.796,
+    "lon": -80.2898
+  },
+  {
+    "name": "Nashville",
+    "country": "USA",
+    "tags": [
+      "nightlife",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Country music honky-tonks and a growing food scene.",
+    "iata": "BNA",
+    "lat": 36.1245,
+    "lon": -86.6782
+  },
+  {
+    "name": "New Orleans",
+    "country": "USA",
+    "tags": [
+      "food",
+      "nightlife",
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Jazz, Creole cooking and a famously lively French Quarter.",
+    "iata": "MSY",
+    "lat": 29.9934,
+    "lon": -90.2647
+  },
+  {
+    "name": "New York City",
+    "country": "USA",
+    "tags": [
+      "culture",
+      "nightlife",
+      "shopping",
+      "food",
+      "history"
+    ],
+    "avgDailyCostUSD": 220,
+    "idealLengthMin": 3,
+    "idealLengthMax": 8,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "World-class museums, food, shows and nonstop energy.",
+    "iata": "JFK",
+    "lat": 40.6413,
+    "lon": -73.7781
+  },
+  {
+    "name": "Philadelphia",
+    "country": "USA",
+    "tags": [
+      "history",
+      "food",
+      "culture"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Birthplace of American independence, with a huge art museum.",
+    "iata": "PHL",
+    "lat": 39.8719,
+    "lon": -75.2411
+  },
+  {
+    "name": "Portland",
+    "country": "USA",
+    "tags": [
+      "food",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 160,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A quirky, food-truck-filled city near forests and waterfalls.",
+    "iata": "PDX",
+    "lat": 45.5887,
+    "lon": -122.598
+  },
+  {
+    "name": "San Diego",
+    "country": "USA",
+    "tags": [
+      "beach",
+      "food",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 190,
+    "idealLengthMin": 3,
+    "idealLengthMax": 6,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Reliable sun, a famous zoo and laid-back beach towns.",
+    "iata": "SAN",
+    "lat": 32.7336,
+    "lon": -117.19
+  },
+  {
+    "name": "San Francisco",
+    "country": "USA",
+    "tags": [
+      "culture",
+      "food",
+      "nature"
+    ],
+    "avgDailyCostUSD": 220,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Hilly streets, the Golden Gate Bridge and nearby wine country.",
+    "iata": "SFO",
+    "lat": 37.6198,
+    "lon": -122.3748
+  },
+  {
+    "name": "Seattle",
+    "country": "USA",
+    "tags": [
+      "food",
+      "culture",
+      "nature"
+    ],
+    "avgDailyCostUSD": 180,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Coffee culture, waterfront markets and nearby mountains.",
+    "iata": "SEA",
+    "lat": 47.4479,
+    "lon": -122.3103
+  },
+  {
+    "name": "Washington, D.C.",
+    "country": "USA",
+    "tags": [
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 170,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "National monuments and free world-class museums.",
+    "iata": "DCA",
+    "lat": 38.8521,
+    "lon": -77.0377
+  },
+  {
+    "name": "Yellowstone",
+    "country": "USA",
+    "tags": [
+      "nature",
+      "wildlife",
+      "adventure"
+    ],
+    "avgDailyCostUSD": 130,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Geysers, hot springs and abundant wildlife in America's first national park.",
+    "iata": "JAC",
+    "lat": 43.6073,
+    "lon": -110.738
+  },
+  {
+    "name": "Samarkand",
+    "country": "Uzbekistan",
+    "tags": [
+      "history",
+      "culture"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "Turquoise-domed monuments along the ancient Silk Road.",
+    "iata": "SKD",
+    "lat": 39.7018,
+    "lon": 66.9815
+  },
+  {
+    "name": "Tashkent",
+    "country": "Uzbekistan",
+    "tags": [
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 45,
+    "idealLengthMin": 2,
+    "idealLengthMax": 4,
+    "ageSuitability": [
+      "adult",
+      "senior"
+    ],
+    "description": "A green, Soviet-era capital gateway to the Silk Road.",
+    "iata": "TAS",
+    "lat": 41.2579,
+    "lon": 69.2812
+  },
+  {
+    "name": "Da Lat",
+    "country": "Vietnam",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 30,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A cool-climate hill town with waterfalls and pine forests.",
+    "iata": "DLI",
+    "lat": 11.7506,
+    "lon": 108.367
+  },
+  {
+    "name": "Ha Long Bay",
+    "country": "Vietnam",
+    "tags": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "avgDailyCostUSD": 50,
+    "idealLengthMin": 2,
+    "idealLengthMax": 3,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Thousands of limestone karsts rising from emerald water.",
+    "iata": "HAN",
+    "lat": 21.2212,
+    "lon": 105.807
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "tags": [
+      "food",
+      "culture",
+      "history"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "Chaotic old-quarter streets and legendary street food.",
+    "iata": "HAN",
+    "lat": 21.2212,
+    "lon": 105.807
+  },
+  {
+    "name": "Ho Chi Minh City & Mekong Delta",
+    "country": "Vietnam",
+    "tags": [
+      "food",
+      "culture",
+      "history",
+      "nature"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 5,
+    "idealLengthMax": 12,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Street food, war history, floating markets and river life.",
+    "iata": "SGN",
+    "lat": 10.8188,
+    "lon": 106.652
+  },
+  {
+    "name": "Hoi An",
+    "country": "Vietnam",
+    "tags": [
+      "culture",
+      "food",
+      "relaxation",
+      "beach"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "A lantern-lit ancient town known for tailors and riverside dining.",
+    "iata": "DAD",
+    "lat": 16.0439,
+    "lon": 108.199
+  },
+  {
+    "name": "Nha Trang",
+    "country": "Vietnam",
+    "tags": [
+      "beach",
+      "relaxation",
+      "nightlife"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 4,
+    "idealLengthMax": 7,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "A long beach strip with diving and island-hopping tours.",
+    "iata": "CXR",
+    "lat": 11.9982,
+    "lon": 109.219
+  },
+  {
+    "name": "Sapa",
+    "country": "Vietnam",
+    "tags": [
+      "nature",
+      "adventure",
+      "culture"
+    ],
+    "avgDailyCostUSD": 35,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult"
+    ],
+    "description": "Terraced rice fields and trekking through hill-tribe villages.",
+    "iata": "HAN",
+    "lat": 21.2212,
+    "lon": 105.807
+  },
+  {
+    "name": "Victoria Falls",
+    "country": "Zimbabwe",
+    "tags": [
+      "nature",
+      "adventure",
+      "wildlife"
+    ],
+    "avgDailyCostUSD": 150,
+    "idealLengthMin": 3,
+    "idealLengthMax": 5,
+    "ageSuitability": [
+      "young",
+      "adult",
+      "senior"
+    ],
+    "description": "One of the world's largest waterfalls, with bungee jumps and river rafting.",
+    "iata": "VFA",
+    "lat": -18.0974,
+    "lon": 25.8369
+  }
 ]

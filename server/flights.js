@@ -5,8 +5,24 @@ const cities = JSON.parse(
   fs.readFileSync(path.join(__dirname, "..", "data", "cities.json"), "utf8")
 );
 
-function findCity(name) {
-  return cities.find((c) => c.name === name) || null;
+function findCity(iata) {
+  return cities.find((c) => c.iata === iata) || null;
+}
+
+function searchCities(query, limit = 20) {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+
+  const starts = [];
+  const contains = [];
+  for (const c of cities) {
+    if (c.name.toLowerCase().startsWith(q) || c.iata.toLowerCase() === q) {
+      starts.push(c);
+    } else if (`${c.name} ${c.country} ${c.iata}`.toLowerCase().includes(q)) {
+      contains.push(c);
+    }
+  }
+  return starts.concat(contains).slice(0, limit);
 }
 
 function toRad(deg) {
@@ -33,8 +49,8 @@ function perKmRate(distanceKm) {
 // Rough, self-contained estimate (no live flight data source is available here):
 // round-trip price scales with great-circle distance, and routes beyond ~6500km
 // are assumed to need a connection.
-function estimateFlight(originCityName, dest) {
-  const origin = findCity(originCityName);
+function estimateFlight(originIata, dest) {
+  const origin = findCity(originIata);
   if (!origin || !Number.isFinite(dest.lat) || !Number.isFinite(dest.lon)) return null;
 
   const distanceKm = Math.round(haversineKm(origin, dest));
@@ -57,4 +73,4 @@ function estimateFlight(originCityName, dest) {
   };
 }
 
-module.exports = { estimateFlight, cities };
+module.exports = { estimateFlight, searchCities, cities };

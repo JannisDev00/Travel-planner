@@ -20,9 +20,9 @@
       <form id="planForm" class="grid">
         <label>
           Starting city
-          <select name="originCity" id="originCitySelect" required>
-            <option value="">Select a city…</option>
-          </select>
+          <input type="text" id="originCityText" list="originCityOptions" autocomplete="off" placeholder="Start typing a city or airport…" required />
+          <datalist id="originCityOptions"></datalist>
+          <input type="hidden" name="originCity" id="originCityValue" />
         </label>
 
         <label>
@@ -68,12 +68,26 @@
           <input type="number" name="budgetUSD" min="10" max="1000000" required />
         </label>
 
+        <label>
+          Accommodation type
+          <select name="accommodationType">
+            <option value="">Any / no preference</option>
+            <option value="hostel">Hostel</option>
+            <option value="hotel">Hotel</option>
+            <option value="resort">Resort</option>
+            <option value="apartment">Apartment / Airbnb</option>
+          </select>
+        </label>
+
         <fieldset class="interests">
           <legend>Interests (pick at least one)</legend>
           <div class="interest-grid" id="interestGrid"></div>
         </fieldset>
 
-        <button type="submit" class="primary">Get my plan</button>
+        <div class="form-actions">
+          <button type="submit" class="primary">Get my plan</button>
+          <button type="button" id="resetFormBtn">↺ Reset filters</button>
+        </div>
       </form>
       <p id="formError" class="error"></p>
     </section>

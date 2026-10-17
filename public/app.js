@@ -34,12 +34,41 @@ function renderInterestChips() {
   });
 }
 
-async function loadCities() {
-  const select = document.getElementById("originCitySelect");
-  const cities = await api("/api/cities");
-  cities.forEach((city) => {
-    const option = el("option", { value: city.name, text: `${city.name}, ${city.country}` });
-    select.appendChild(option);
+function formatCityLabel(city) {
+  return `${city.name}, ${city.country} (${city.iata})`;
+}
+
+function setupCityAutocomplete() {
+  const textInput = document.getElementById("originCityText");
+  const hiddenInput = document.getElementById("originCityValue");
+  const datalist = document.getElementById("originCityOptions");
+  let cityLookup = {};
+  let debounceTimer;
+
+  textInput.addEventListener("input", () => {
+    hiddenInput.value = cityLookup[textInput.value] || "";
+
+    clearTimeout(debounceTimer);
+    const q = textInput.value.trim();
+    if (q.length < 2) {
+      datalist.innerHTML = "";
+      return;
+    }
+
+    debounceTimer = setTimeout(async () => {
+      try {
+        const matches = await api(`/api/cities?q=${encodeURIComponent(q)}`);
+        datalist.innerHTML = "";
+        cityLookup = {};
+        matches.forEach((city) => {
+          const label = formatCityLabel(city);
+          cityLookup[label] = city.iata;
+          datalist.appendChild(el("option", { value: label }));
+        });
+      } catch {
+        // Transient search errors aren't worth surfacing on every keystroke.
+      }
+    }, 200);
   });
 }
 
@@ -127,7 +156,54 @@ function setupAuthDialog() {
   });
 }
 
-function renderPlans(plans, { showSaveButton }) {
+// Hostelworld needs a known continent/country path (not a free-text city search,
+// which 404s for anything it doesn't already have an exact listing for), so hostel
+// links point to the country-level results page rather than the specific city.
+const HOSTELWORLD_COUNTRY_PATHS = {
+  Thailand: "asia/thailand",
+  Indonesia: "asia/indonesia",
+  Portugal: "europe/portugal",
+  Iceland: "europe/iceland",
+  Japan: "asia/japan",
+  "South Africa": "africa/south-africa",
+  Spain: "europe/spain",
+  Switzerland: "europe/switzerland",
+  Morocco: "africa/morocco",
+  "Costa Rica": "north-america/costa-rica",
+  USA: "north-america/usa",
+  Maldives: "asia/maldives",
+  Vietnam: "asia/vietnam",
+  "Czech Republic": "europe/czech-republic",
+  "New Zealand": "oceania/new-zealand",
+  Italy: "europe/italy",
+  Seychelles: "africa/seychelles",
+  Hungary: "europe/hungary",
+  Kenya: "africa/kenya",
+};
+
+const ACCOMMODATION_SITES = {
+  hostel: {
+    url: (city, country) => {
+      const path = HOSTELWORLD_COUNTRY_PATHS[country];
+      return path ? `https://www.hostelworld.com/hostels/${path}/` : "https://www.hostelworld.com/";
+    },
+    text: (city, country) => `Browse hostels in ${country} on Hostelworld`,
+  },
+  hotel: {
+    url: (city) => `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`,
+    text: (city) => `Browse hotels in ${city} on Booking.com`,
+  },
+  resort: {
+    url: (city) => `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(`${city} resort`)}`,
+    text: (city) => `Browse resorts in ${city} on Booking.com`,
+  },
+  apartment: {
+    url: (city) => `https://www.airbnb.com/s/${encodeURIComponent(city)}/homes`,
+    text: (city) => `Browse apartments in ${city} on Airbnb`,
+  },
+};
+
+function renderPlans(plans, { showSaveButton, accommodationType }) {
   const results = document.getElementById("results");
   results.innerHTML = "";
 
@@ -152,10 +228,29 @@ function renderPlans(plans, { showSaveButton }) {
     if (plan.flight) {
       const f = plan.flight;
       const stopsText = f.stops === 0 ? "Direct" : `${f.stops} stop`;
+      const flightUrl = `https://www.google.com/travel/flights?q=${encodeURIComponent(
+        `Flights from ${f.originCity} to ${plan.destination}`
+      )}`;
       cardChildren.push(
-        el("div", {
+        el("a", {
           class: "flight-info",
+          href: flightUrl,
+          target: "_blank",
+          rel: "noopener noreferrer",
           text: `${f.originCity} (${f.originIata}) → ${f.destinationIata}: ~$${f.roundTripPriceUSD} round trip · ${stopsText} · ~${f.totalDurationHours}h`,
+        })
+      );
+    }
+
+    const accommodation = ACCOMMODATION_SITES[accommodationType];
+    if (accommodation) {
+      cardChildren.push(
+        el("a", {
+          class: "accommodation-info",
+          href: accommodation.url(plan.destination, plan.country),
+          target: "_blank",
+          rel: "noopener noreferrer",
+          text: accommodation.text(plan.destination, plan.country),
         })
       );
     }
@@ -289,6 +384,11 @@ function setupPlanForm() {
     e.preventDefault();
     errorEl.textContent = "";
 
+    if (!document.getElementById("originCityValue").value) {
+      errorEl.textContent = "Pick a valid starting city from the list.";
+      return;
+    }
+
     if (!state.selectedInterests.size) {
       errorEl.textContent = "Pick at least one interest.";
       return;
@@ -308,16 +408,25 @@ function setupPlanForm() {
     try {
       const data = await api("/api/plan", { method: "POST", body: JSON.stringify(body) });
       state.lastResult = data;
-      renderPlans(data.plans, { showSaveButton: !!state.user });
+      renderPlans(data.plans, { showSaveButton: !!state.user, accommodationType: formData.get("accommodationType") });
     } catch (err) {
       errorEl.textContent = err.message;
     }
+  });
+
+  document.getElementById("resetFormBtn").addEventListener("click", () => {
+    form.reset();
+    state.selectedInterests.clear();
+    document.querySelectorAll(".interest-chip.selected").forEach((chip) => chip.classList.remove("selected"));
+    errorEl.textContent = "";
+    state.lastResult = null;
+    document.getElementById("results").innerHTML = "";
   });
 }
 
 async function init() {
   renderInterestChips();
-  await loadCities();
+  setupCityAutocomplete();
   setupAuthDialog();
   setupPlanForm();
 
